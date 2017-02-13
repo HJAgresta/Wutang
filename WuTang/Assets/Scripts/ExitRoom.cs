@@ -6,6 +6,7 @@ public class ExitRoom : MonoBehaviour {
 
     public GameObject playerpub;
     public GameObject key;
+    public GameObject lever;
     public GameObject door;
     private Vector3 playerpos;
     private bool hasKey;
@@ -30,8 +31,17 @@ public class ExitRoom : MonoBehaviour {
                 DestroyObject(key);
             }
         }
-        
-       
+
+        if (GameObject.Find("lever") && Vector3.Distance(playerpos, lever.transform.position) < 10)
+        {
+            //push e to pick up key
+            if (Input.GetKeyDown("e"))
+            {
+                Debug.Log("lever flip");
+                lever.transform.eulerAngles = new Vector3(180f, 180f, 0f);
+            }
+        }
+
         //open door check
         //door will move to side when run into
         if (hasKey && Vector3.Distance(playerpos, door.transform.position) < 20)
