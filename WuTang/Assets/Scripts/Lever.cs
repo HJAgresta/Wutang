@@ -7,6 +7,8 @@ public class Lever : MonoBehaviour {
     public GameObject playerpub;
     private Vector3 playerpos;
     public Animation ani;
+    public GameObject act;
+
 
     // Use this for initialization
     void Start () {
@@ -22,13 +24,11 @@ public class Lever : MonoBehaviour {
             //push e to pick up key
             if (Input.GetKeyDown("e"))
             {
+
                 Debug.Log("lever flip");
                 ani.Play();
+                act.GetComponent<basicMove>().activate();
             }
         }
-    }
-    void move()
-    {
-        this.transform.eulerAngles = new Vector3(180f, 180f, 0f);
     }
 }
