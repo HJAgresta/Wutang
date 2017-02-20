@@ -16,7 +16,7 @@ public class basicMove : PuzzleObject {
 
     public override void activate()
     {
-        this.transform.Translate(0, 100, 0);
+        this.transform.Translate(0, -28, 0);
     }
 
 }

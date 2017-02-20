@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ExitRoom : MonoBehaviour {
 
+    private int roomCount;
     public GameObject playerpub;
     public GameObject key;
     public GameObject door;
@@ -13,6 +14,7 @@ public class ExitRoom : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         hasKey = false;
+        roomCount = 1;
 	}
 	
 	// Update is called once per frame
@@ -49,13 +51,10 @@ public class ExitRoom : MonoBehaviour {
         //check if player left the room
         if(playerpos.x < -50)
         {
-            if (!hasKey)
+            if (roomCount == 1 || roomCount == 2)
             {
-                Debug.Log("Key required");
-            }
-            else
-            {
-                Debug.Log("Exited room");
+                Vector3 vec = new Vector3(47f, playerpub.transform.position.y + 30f, 0f);
+                playerpub.transform.position = vec;
             }
         }
 	}
