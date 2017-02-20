@@ -48,14 +48,19 @@ public class ExitRoom : MonoBehaviour {
             }
         }
         
-        //check if player left the room
+        //check if player left the room they are on
         if(playerpos.x < -50)
         {
-            if (roomCount == 1 || roomCount == 2)
+            if(roomCount == 1)
             {
-                Vector3 vec = new Vector3(47f, playerpub.transform.position.y + 30f, 0f);
-                playerpub.transform.position = vec;
+                resetRoom();
+                roomCount++;
             }
         }
 	}
+
+    public void resetRoom()
+    {
+        hasKey = false;
+    }
 }
