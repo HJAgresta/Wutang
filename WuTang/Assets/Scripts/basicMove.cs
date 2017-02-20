@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class basicMove : MonoBehaviour {
+public class basicMove : PuzzleObject {
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +14,7 @@ public class basicMove : MonoBehaviour {
 		
 	}
 
-    public void activate()
+    public override void activate()
     {
         this.transform.Translate(0, 100, 0);
     }
