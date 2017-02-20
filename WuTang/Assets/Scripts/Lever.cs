@@ -19,7 +19,7 @@ public class Lever : MonoBehaviour {
 
         playerpos = playerpub.transform.position;
 
-        if (GameObject.Find("lever") && Vector3.Distance(playerpos, this.transform.position) < 10)
+        if (GameObject.Find("lever") && Vector3.Distance(playerpos, this.transform.position) < 15)
         {
             //push e to pick up key
             if (Input.GetKeyDown("e"))

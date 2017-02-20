@@ -34,17 +34,16 @@ public class ExitRoom : MonoBehaviour {
 
         //open door check
         //door will move to side when run into
-        if (hasKey && Vector3.Distance(playerpos, door.transform.position) < 20)
+        if (hasKey && Vector3.Distance(playerpos, door.transform.position) < 30)
         {
-            if (door.transform.eulerAngles.y > 207)
+            if (door.transform.eulerAngles.y < 163f)
             {
-                door.transform.Rotate(0, -50 * Time.deltaTime, 0);
+                door.transform.Rotate(0, 50 * Time.deltaTime, 0);
             }
             else
             {
-                door.transform.eulerAngles = new Vector3(0f, 207f, 0f);
+                door.transform.eulerAngles = new Vector3(0f, 163f, 0f);
             }
-            Debug.Log("Door is opening");
         }
         
         //check if player left the room

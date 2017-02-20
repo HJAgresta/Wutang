@@ -17,7 +17,6 @@ public class basicMove : MonoBehaviour {
     public void activate()
     {
         this.transform.Translate(0, 100, 0);
-        Debug.Log("adfasdf");
     }
 
 }
