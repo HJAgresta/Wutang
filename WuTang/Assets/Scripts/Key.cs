@@ -26,7 +26,7 @@ public class Key : PuzzleObject
         if (Vector3.Distance(playerpos, this.transform.position) < 19)
         {
             //push e to pick up key
-            if (Input.GetKeyDown("e"))
+            if (Input.GetKeyDown("e") && GameObject.Find("bedroomkey"))
             {
                 activate();
             }
