@@ -85,7 +85,9 @@
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\Lever.cs" />
     <Compile Include="Assets\Scripts\OpenDrawer.cs" />
+    <Compile Include="Assets\Scripts\Painting.cs" />
     <Compile Include="Assets\Scripts\PuzzleObject.cs" />
+    <Compile Include="Assets\Scripts\UnlockedDoor.cs" />
     <Compile Include="Assets\Scripts\getFlashlight.cs" />
   </ItemGroup>
   <ItemGroup>

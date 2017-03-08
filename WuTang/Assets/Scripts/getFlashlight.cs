@@ -15,7 +15,6 @@ public class getFlashlight : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown("e"))
         {
-            Debug.Log(Vector3.Distance(Player.transform.position, this.transform.position) < 15);
             if (Vector3.Distance(Player.transform.position, this.transform.position) < 15)
             {
                 this.transform.position = Player.transform.position;
