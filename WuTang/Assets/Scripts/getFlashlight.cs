@@ -18,7 +18,11 @@ public class getFlashlight : MonoBehaviour {
             Debug.Log(Vector3.Distance(Player.transform.position, this.transform.position) < 15);
             if (Vector3.Distance(Player.transform.position, this.transform.position) < 15)
             {
+                this.transform.position = Player.transform.position;
+                this.transform.rotation = Player.transform.rotation;
                 this.transform.SetParent(Player.transform);
+                this.transform.Rotate(0, 180, 0);
+                this.transform.Translate(-3, 5, -2);
             }
         }
 	}

@@ -19,13 +19,13 @@ public class Door : PuzzleObject
     {
         if (unlocked)
         {
-            if (gameObject.transform.eulerAngles.y < 163f)
+            if (gameObject.transform.eulerAngles.y < 130f)
             {
                 gameObject.transform.Rotate(0, 50 * Time.deltaTime, 0);
             }
             else
             {
-                gameObject.transform.eulerAngles = new Vector3(0f, 163f, 0f);
+                gameObject.transform.eulerAngles = new Vector3(0f, 130f, 0f);
                 unlocked = false;
             }
         }
