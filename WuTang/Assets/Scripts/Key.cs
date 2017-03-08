@@ -8,12 +8,11 @@ public class Key : PuzzleObject
     public GameObject playerpub;
     private Vector3 playerpos;
     public PuzzleObject act;
-
+    bool pickable = false;
 
     public override void activate()
     {
-        act.activate();
-        Destroy(gameObject);
+        pickable = true;
     }
 
 
@@ -26,9 +25,10 @@ public class Key : PuzzleObject
         if (Vector3.Distance(playerpos, this.transform.position) < 19)
         {
             //push e to pick up key
-            if (Input.GetKeyDown("e") && GameObject.Find("bedroomkey"))
+            if (Input.GetKeyDown("e")&&pickable)
             {
-                activate();
+                act.activate();
+                Destroy(gameObject);
             }
         }
     }
