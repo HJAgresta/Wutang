@@ -25,7 +25,6 @@ public class Button : PuzzleObject
 
         if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 19)
         {
-            Debug.Log("as");
             go = true;
             act.activate();
         }
