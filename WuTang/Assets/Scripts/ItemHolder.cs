@@ -11,7 +11,7 @@ public class ItemHolder : PuzzleObject {
     private int items = 3;
     private int current = 0;
     private int inHand = 0;
-
+    private float move = -0.9f;
     public override void activate()
     {
         giveable = true;
@@ -27,8 +27,9 @@ public class ItemHolder : PuzzleObject {
             for(int i = 0; i < loop; i++)
             {
                 Debug.Log("blech");
-
-                GameObject.Instantiate(knife,new Vector3((.6f * (current + 1)),  0, 0), new Quaternion(0, 0, 0, 0), GameObject.Find("Kitchen").transform);
+                GameObject spawned = GameObject.Instantiate(knife, GameObject.Find("KnifeHolder").transform, true);
+                spawned.transform.Translate(new Vector3(move, 0, 0));
+                move = move - 0.9f;
                 current++;
                 inHand--;
 
