@@ -20,7 +20,7 @@ public class Key : PuzzleObject
         playerpos = playerpub.transform.position;
 
 
-        if (Vector3.Distance(playerpos, this.transform.position) < 19 && pickable)
+        if (Vector3.Distance(playerpos, this.transform.position) < 19)
         {
             //push e to pick up key
             if (Input.GetKeyDown("e") && pickable)
