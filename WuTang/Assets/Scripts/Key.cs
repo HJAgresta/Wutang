@@ -14,17 +14,16 @@ public class Key : PuzzleObject
         pickable = true;
     }
 
-
     // Update is called once per frame
     void Update ()
     {
         playerpos = playerpub.transform.position;
 
 
-        if (Vector3.Distance(playerpos, this.transform.position) < 19)
+        if (Vector3.Distance(playerpos, this.transform.position) < 19 && pickable)
         {
             //push e to pick up key
-            if (Input.GetKeyDown("e")&&pickable)
+            if (Input.GetKeyDown("e") && pickable)
             {
                 act.activate();
                 Destroy(gameObject);

@@ -24,14 +24,6 @@ public class OpenDrawer : PuzzleObject
         if (go && 5 > Mathf.Abs(oldPos- gameObject.transform.position.z))
         {
             gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime*10));
-        }
-        else if(next == false)
-        {
-            next = true;
-        }
-
-        if(next)
-        {
             act.activate();
         }
     }
