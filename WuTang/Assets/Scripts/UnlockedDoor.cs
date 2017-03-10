@@ -15,7 +15,7 @@ public class UnlockedDoor : MonoBehaviour {
     {
         playerpos = playerpub.transform.position;
 
-        if (Vector3.Distance(playerpos, this.transform.position) < 20 && Input.GetKeyDown("e"))
+        if (Vector3.Distance(playerpos, this.transform.position) < 25 && Input.GetKeyDown("e"))
         {
             opening = true;
         }

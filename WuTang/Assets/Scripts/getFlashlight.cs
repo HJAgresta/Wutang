@@ -17,7 +17,7 @@ public class getFlashlight : MonoBehaviour {
                 this.transform.rotation = Player.transform.rotation;
                 this.transform.SetParent(Player.transform);
                 this.transform.Rotate(0, 180, 0);
-                this.transform.Translate(-3, 5, -2);
+                this.transform.Translate(-2, -1, 0);
             }
         }
 	}
