@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Door : PuzzleObject
 {
-
     public GameObject playerpub;
     private Vector3 playerpos;
     bool unlocked =false;
     public float openThreshhold;
-    // Update is called once per frame
 
     public override void activate()
     {

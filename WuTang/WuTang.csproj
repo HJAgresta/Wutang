@@ -85,10 +85,13 @@
     <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\Lever.cs" />
+    <Compile Include="Assets\Scripts\NumUnlock.cs" />
     <Compile Include="Assets\Scripts\OpenDesk.cs" />
     <Compile Include="Assets\Scripts\OpenDrawer.cs" />
     <Compile Include="Assets\Scripts\Painting.cs" />
+    <Compile Include="Assets\Scripts\PushChair.cs" />
     <Compile Include="Assets\Scripts\PuzzleObject.cs" />
+    <Compile Include="Assets\Scripts\TablePlatform.cs" />
     <Compile Include="Assets\Scripts\UnlockedDoor.cs" />
     <Compile Include="Assets\Scripts\getFlashlight.cs" />
   </ItemGroup>

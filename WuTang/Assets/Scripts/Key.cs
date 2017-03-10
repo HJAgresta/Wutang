@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Key : PuzzleObject
 {
-
     public GameObject playerpub;
     private Vector3 playerpos;
     public PuzzleObject act;
