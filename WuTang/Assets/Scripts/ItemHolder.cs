@@ -28,7 +28,7 @@ public class ItemHolder : PuzzleObject {
             {
                 Debug.Log("blech");
 
-                GameObject.Instantiate(knife, new Vector3((.6f * (current + 1)),  0, 0), new Quaternion(0, 0, 0, 0), GameObject.Find("Kitchen").transform);
+                GameObject.Instantiate(knife,new Vector3((.6f * (current + 1)),  0, 0), new Quaternion(0, 0, 0, 0), GameObject.Find("Kitchen").transform);
                 current++;
                 inHand--;
 
