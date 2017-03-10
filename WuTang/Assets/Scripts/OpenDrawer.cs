@@ -6,7 +6,6 @@ public class OpenDrawer : PuzzleObject
 {
     bool go = false;
     float oldPos;
-    bool next = false;
     public PuzzleObject act;
 
     public override void activate()
