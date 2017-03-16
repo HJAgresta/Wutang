@@ -15,14 +15,17 @@ public class RandomDoor : PuzzleObject {
 		if(num == 0)
         {
             act1.activate();
+            unlock = true;
         }
         else if (num == 1)
         {
             act2.activate();
+            unlock = true;
         }
         else if (num == 2)
         {
             act3.activate();
+            unlock = true;
         }
     }
 
@@ -30,7 +33,7 @@ public class RandomDoor : PuzzleObject {
     {
         if (!unlock)
         {
-            num = Random.Range(0, 2);
+            num = Random.Range(0, 3);
         }
     }
 }
