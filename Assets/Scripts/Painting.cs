@@ -31,7 +31,7 @@ public class Painting : PuzzleObject {
         {
             if (this.transform.position.y > -28.2)
             {
-                gameObject.transform.Translate(new Vector3(0f, -9.75f * Time.deltaTime, 0f));
+                gameObject.transform.Translate(new Vector3(0f, 9.75f * Time.deltaTime, 0f));
             }
             else
             {
