@@ -8,10 +8,11 @@ public class ItemHolder : PuzzleObject {
     public GameObject playerpub;
     private bool giveable = true;
     public PuzzleObject act;
-    private int items = 3;
+    public int items;
     private int current = 0;
     private int inHand = 0;
     private float move = -0.9f;
+
     public override void activate()
     {
         giveable = true;
@@ -26,7 +27,6 @@ public class ItemHolder : PuzzleObject {
 
             for(int i = 0; i < loop; i++)
             {
-                Debug.Log("blech");
                 GameObject spawned = GameObject.Instantiate(knife, GameObject.Find("KnifeHolder").transform, true);
                 spawned.transform.Translate(new Vector3(move, 0, 0));
                 move = move - 0.9f;
