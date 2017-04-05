@@ -21,10 +21,10 @@ public class Inventory : MonoBehaviour {
                 {
                     Debug.Log("hitsomething");
                     GameObject puzzleObject = hit.collider.gameObject;
-                    if (puzzleObject.GetComponent<PuzzleObject>().interactable)
-                    {
-                        Debug.Log(puzzleObject.name);
-                    }
+                    //if (puzzleObject.GetComponent<PuzzleObject>().interactable)
+                    //{
+                    //    Debug.Log(puzzleObject.name);
+                    //}
                 }
             }
         }
