@@ -6,7 +6,7 @@ public class Door : PuzzleObject
 {
     public GameObject playerpub;
     private Vector3 playerpos;
-    bool unlocked =false;
+    bool unlocked = false;
     public float openThreshhold;
 
     public override void activate()

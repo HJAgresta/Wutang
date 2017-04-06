@@ -8,7 +8,7 @@ public class Lever : PuzzleObject{
     private Vector3 playerpos;
     public Animation ani;
     public PuzzleObject act;
-
+    public bool active;
 
     // Use this for initialization
     void Start () {
@@ -25,14 +25,17 @@ public class Lever : PuzzleObject{
             //push e to pick up key
             if (Input.GetKeyDown("e"))
             {
-                activate();
+                if(active)
+                {
+                    ani.Play();
+                    act.activate();
+                }
             }
         }
     }
 
     public override void activate()
     {
-                ani.Play();
-                act.activate();
+                active = true;
     }
 }
