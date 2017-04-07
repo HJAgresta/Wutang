@@ -24,12 +24,11 @@ public class Door : PuzzleObject
     }
     void Update ()
     {
-        if(lessthan)
+        
+        if(lessthan && unlocked)
         {
             if (!clockwise)
             {
-                if (unlocked)
-                {
                     if (gameObject.transform.eulerAngles.y < openThreshhold)
                     {
                         gameObject.transform.Rotate(0, 50 * Time.deltaTime, 0);
@@ -39,14 +38,11 @@ public class Door : PuzzleObject
                         gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
                         unlocked = false;
                     }
-                }
+                
 
             }
             else
             {
-
-                if (unlocked)
-                {
                     if (gameObject.transform.eulerAngles.y < openThreshhold)
                     {
                         gameObject.transform.Rotate(0, -50 * Time.deltaTime, 0);
@@ -56,7 +52,7 @@ public class Door : PuzzleObject
                         gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
                         unlocked = false;
                     }
-                }
+                
             }
         }
         else

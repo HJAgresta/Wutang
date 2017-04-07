@@ -4,31 +4,20 @@ using UnityEngine;
 
 public class Key : followObject
 {
-    public GameObject playerpub;
-    private Vector3 playerpos;
-    public PuzzleObject act;
-    bool pickable = false;
 
     public override void activate()
     {
-        pickable = true;
     }
 
+
     // Update is called once per frame
-    void Update ()
+    void OnTriggerEnter(Collider other)
     {
-        playerpos = playerpub.transform.position;
-
-
-        if (Vector3.Distance(playerpos, this.transform.position) < 19)
+        if(other.gameObject.GetComponent<Door>()!= null)
         {
-            //push e to pick up key
-            if (Input.GetKeyDown("e") && pickable)
-            {
-                follow = true;
-            }
+            other.gameObject.GetComponent<Door>().activate();
+            GameObject.Find("Player").GetComponent<Inventory>().emptyInventory();
+            Destroy(gameObject);
         }
-
-        Follow();
     }
 }
