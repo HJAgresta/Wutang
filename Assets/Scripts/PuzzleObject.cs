@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuzzleObject : MonoBehaviour
+public abstract class PuzzleObject : MonoBehaviour
 {
-    public virtual void activate()
-    {
-    }
+    public bool interactable = true;
+    public virtual void activate(){}
 }

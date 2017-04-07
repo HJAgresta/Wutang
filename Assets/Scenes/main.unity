@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16003798, g: 0.19977081, b: 0.2786975, a: 1}
+  m_IndirectSpecularColor: {r: 0.16003785, g: 0.19977067, b: 0.27869627, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8459df997d0b34baafbad01da2c2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   ani: {fileID: 5210070}
   act: {fileID: 64011509}
@@ -332,8 +333,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &7798794
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,8 +465,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &9695474
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,6 +1004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1 &28831265
@@ -1206,8 +1212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &35201234
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,6 +1846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2007385a5910f304a9e34647ba20fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act: {fileID: 448601050}
   dist: 3
 --- !u!65 &58498066
@@ -1883,6 +1892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2007385a5910f304a9e34647ba20fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act: {fileID: 145097429}
   dist: 5
 --- !u!1 &64227882
@@ -2997,8 +3007,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &104431183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,8 +3595,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &114584360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,8 +4059,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 180
+  clockwise: 1
 --- !u!1001 &140135180
 Prefab:
   m_ObjectHideFlags: 0
@@ -4446,6 +4462,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 1012610652}
 --- !u!1 &146958758 stripped
@@ -4467,6 +4485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8459df997d0b34baafbad01da2c2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   ani: {fileID: 1636327655}
   act: {fileID: 764679817}
@@ -5328,8 +5347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1 &186197317
 GameObject:
   m_ObjectHideFlags: 0
@@ -5662,8 +5683,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!4 &199749944 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5060436f3cbd12245b98107f7c5abebd, type: 3}
@@ -7006,6 +7029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1 &245410566 stripped
 GameObject:
@@ -7026,6 +7050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea2df184db08bc4ebdd9c47f763c2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 58498065}
   dist: 0.2
@@ -8307,6 +8332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595cc58215a8ede4cbbf5315e29419b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act1: {fileID: 585959869}
   act2: {fileID: 1969645974}
   act3: {fileID: 524400541}
@@ -9526,8 +9552,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &339618845
 Prefab:
   m_ObjectHideFlags: 0
@@ -11671,8 +11699,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &402121398
 GameObject:
   m_ObjectHideFlags: 0
@@ -12694,8 +12724,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &437141842
 Prefab:
   m_ObjectHideFlags: 0
@@ -12996,6 +13028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1001 &446871529
 Prefab:
@@ -13279,6 +13312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 435810707}
 --- !u!1 &450304946 stripped
@@ -13300,6 +13335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c769b13d75bcf44193c126cf16f84db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 762380400}
   max: -94
@@ -13739,6 +13775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1001 &458928259
@@ -13912,6 +13949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1 &466068005
@@ -16015,8 +16053,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 180
+  clockwise: 1
 --- !u!1 &524950423 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 32447dea20620f3499f5e640d338b5a7, type: 3}
@@ -16387,8 +16427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &535964649
 GameObject:
   m_ObjectHideFlags: 0
@@ -17948,8 +17990,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 270
+  clockwise: 1
 --- !u!1 &574216350
 GameObject:
   m_ObjectHideFlags: 0
@@ -18309,8 +18353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 270
+  clockwise: 1
 --- !u!1001 &589175398
 Prefab:
   m_ObjectHideFlags: 0
@@ -18454,6 +18500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5992f1f14850d0e4db0da2d101578be6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act: {fileID: 1915149960}
   dist: 5
 --- !u!65 &590563815
@@ -18677,6 +18724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2007385a5910f304a9e34647ba20fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act: {fileID: 675628234}
   dist: 3
 --- !u!65 &594029365
@@ -19569,6 +19617,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1 &629184281 stripped
@@ -20492,6 +20541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1dc1252b5e5c5468554ff70ad0252b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   knife: {fileID: 610056478}
   playerpub: {fileID: 187630911}
   act: {fileID: 99083892}
@@ -20838,6 +20888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea2df184db08bc4ebdd9c47f763c2e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 594029364}
   dist: 0.2
@@ -20965,8 +21016,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 180
+  clockwise: 1
 --- !u!1001 &675628232
 Prefab:
   m_ObjectHideFlags: 0
@@ -21028,6 +21081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 899954077}
 --- !u!1001 &677711872
@@ -21491,8 +21546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &703330743
 Prefab:
   m_ObjectHideFlags: 0
@@ -22923,6 +22980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa1421e6b1b1fe40aa5931251dd4455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   steps: 2
   act: {fileID: 1602562482}
@@ -22969,8 +23027,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
-  openThreshhold: 270
+  openThreshhold: 50
+  clockwise: 0
 --- !u!1 &766153152
 GameObject:
   m_ObjectHideFlags: 0
@@ -23014,8 +23074,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &768035905
 Prefab:
   m_ObjectHideFlags: 0
@@ -24172,6 +24234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1001 &803785553
 Prefab:
@@ -24515,6 +24578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1001 &824583466
 Prefab:
@@ -24740,8 +24804,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1001 &833413510
 Prefab:
   m_ObjectHideFlags: 0
@@ -25119,6 +25185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8459df997d0b34baafbad01da2c2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   ani: {fileID: 5210070}
   act: {fileID: 1593751636}
@@ -25732,6 +25799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1 &867992357
@@ -26032,6 +26100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1 &872181910
 GameObject:
@@ -26436,6 +26505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa1421e6b1b1fe40aa5931251dd4455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   steps: 8
   act: {fileID: 146958760}
@@ -26572,8 +26642,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &882223495
 Prefab:
   m_ObjectHideFlags: 0
@@ -27161,8 +27233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 270
+  clockwise: 1
 --- !u!1 &891110186
 GameObject:
   m_ObjectHideFlags: 0
@@ -27486,8 +27560,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!4 &899954078
 Transform:
   m_ObjectHideFlags: 0
@@ -28144,8 +28220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 180
+  clockwise: 1
 --- !u!1 &923874708
 GameObject:
   m_ObjectHideFlags: 0
@@ -28821,6 +28899,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b1b7c194d12fd4786788b5aa066f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 655450831}
 --- !u!1 &961465017
@@ -28968,8 +29047,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &968687208
 Prefab:
   m_ObjectHideFlags: 0
@@ -29932,8 +30013,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1001 &991033127
 Prefab:
   m_ObjectHideFlags: 0
@@ -30833,8 +30916,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 130
+  clockwise: 1
 --- !u!1 &1013428816
 GameObject:
   m_ObjectHideFlags: 0
@@ -31683,8 +31768,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &1042373717
 Prefab:
   m_ObjectHideFlags: 0
@@ -33514,8 +33601,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1106634906
 GameObject:
   m_ObjectHideFlags: 0
@@ -34207,6 +34296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1 &1137336744
 GameObject:
@@ -34770,6 +34860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad9956de6da37445ba380e129f564c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 590563814}
 --- !u!1 &1162896272
@@ -34932,6 +35023,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 1195863268}
 --- !u!1 &1164407416
@@ -35015,8 +35108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1167904894
 GameObject:
   m_ObjectHideFlags: 0
@@ -35495,8 +35590,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1196842286
 GameObject:
   m_ObjectHideFlags: 0
@@ -39344,8 +39441,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1 &1344344461
 GameObject:
   m_ObjectHideFlags: 0
@@ -39454,6 +39553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595cc58215a8ede4cbbf5315e29419b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act1: {fileID: 1590844198}
   act2: {fileID: 573505554}
   act3: {fileID: 990525673}
@@ -40460,6 +40560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8459df997d0b34baafbad01da2c2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   ani: {fileID: 5210070}
   act: {fileID: 296054352}
@@ -41851,6 +41952,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 832997396}
 --- !u!1001 &1440444422
@@ -42650,6 +42753,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa1421e6b1b1fe40aa5931251dd4455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   steps: 3
   act: {fileID: 655450831}
@@ -43011,8 +43115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!4 &1496029993 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5060436f3cbd12245b98107f7c5abebd, type: 3}
@@ -44915,8 +45021,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 180
+  clockwise: 1
 --- !u!1001 &1591655473
 Prefab:
   m_ObjectHideFlags: 0
@@ -45140,6 +45248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 595cc58215a8ede4cbbf5315e29419b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act1: {fileID: 889587476}
   act2: {fileID: 138401286}
   act3: {fileID: 183091996}
@@ -45272,6 +45381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65c51d999f24954496417654fb54b18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   act: {fileID: 1164374690}
 --- !u!23 &1602562483
 MeshRenderer:
@@ -45918,8 +46028,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1629852965
 GameObject:
   m_ObjectHideFlags: 0
@@ -46014,6 +46126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11df622ac8ce5946a7a7c29b3a24e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 2112044460}
 --- !u!1001 &1634089969
@@ -46175,6 +46288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1001 &1636327651
@@ -46270,6 +46384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf8459df997d0b34baafbad01da2c2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   ani: {fileID: 5210070}
   act: {fileID: 1344660963}
@@ -46466,6 +46581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b1b7c194d12fd4786788b5aa066f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 655450831}
 --- !u!1 &1651967685
@@ -46747,8 +46863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1662946226 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 32447dea20620f3499f5e640d338b5a7, type: 3}
@@ -47839,8 +47957,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &1700314790
 Prefab:
   m_ObjectHideFlags: 0
@@ -49138,6 +49258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1 &1738439683
@@ -49264,8 +49385,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1741917801
 GameObject:
   m_ObjectHideFlags: 0
@@ -49725,6 +49848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!1 &1756325801
 GameObject:
@@ -52549,6 +52673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c769b13d75bcf44193c126cf16f84db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 762380400}
   max: -94
@@ -53833,6 +53958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cb22ef26e8bf24cafccf0eee558724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
 --- !u!4 &1893363141 stripped
 Transform:
@@ -54013,8 +54139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &1905045667
 Prefab:
   m_ObjectHideFlags: 0
@@ -54303,6 +54431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 2083771873}
 --- !u!4 &1916393693 stripped
@@ -55025,6 +55155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0707d327ec7f09841a5913e1d1acb982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   player: {fileID: 187630911}
   act: {fileID: 878835915}
 --- !u!1001 &1946117941
@@ -55718,8 +55849,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1 &1974604267
 GameObject:
   m_ObjectHideFlags: 0
@@ -55763,8 +55896,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &1974963947 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: f74f93fe5474b524cab9747661ac3969, type: 3}
@@ -57596,6 +57731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a11df622ac8ce5946a7a7c29b3a24e3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 1437802439}
 --- !u!23 &2031663495
@@ -58149,8 +58285,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &2055179677
 Prefab:
   m_ObjectHideFlags: 0
@@ -59082,8 +59220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
+  clockwise: 1
 --- !u!1 &2086053062 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 555a20664dfa71f4aa34cd0849de9d15, type: 3}
@@ -59103,6 +59243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1b1b7c194d12fd4786788b5aa066f46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   act: {fileID: 655450831}
 --- !u!1 &2092080168
@@ -59377,8 +59518,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1001 &2099855690
 Prefab:
   m_ObjectHideFlags: 0
@@ -59620,6 +59763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4660e28e8b73428429e36b7fd19d43db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
+  follow: 0
   playerpub: {fileID: 187630911}
   act: {fileID: 1343479971}
 --- !u!4 &2112122344 stripped
@@ -59949,8 +60094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 092d1c626668dd04a8fe59eb80542656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
+  clockwise: 1
 --- !u!1 &2122950189
 GameObject:
   m_ObjectHideFlags: 0

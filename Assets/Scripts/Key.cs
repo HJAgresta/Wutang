@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : PuzzleObject
+public class Key : followObject
 {
     public GameObject playerpub;
     private Vector3 playerpos;
@@ -25,9 +25,10 @@ public class Key : PuzzleObject
             //push e to pick up key
             if (Input.GetKeyDown("e") && pickable)
             {
-                act.activate();
-                Destroy(gameObject);
+                follow = true;
             }
         }
+
+        Follow();
     }
 }
