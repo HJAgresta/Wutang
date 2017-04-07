@@ -17,7 +17,6 @@ public abstract class followObject : PuzzleObject
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform; //target the player
-
     }
     public void Awake()
     {
