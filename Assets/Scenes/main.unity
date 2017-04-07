@@ -31304,7 +31304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  openThreshhold: 350
+  openThreshhold: 351
   clockwise: 1
 --- !u!65 &990525674
 BoxCollider:
