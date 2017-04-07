@@ -5595,7 +5595,7 @@ Prefab:
     - target: {fileID: 2300000, guid: 5f49a5bf5dac25b46942a10928552633, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fe340a4d7f39fff41ad593a096d05885, type: 2}
+      objectReference: {fileID: 2100000, guid: 5e43e7f27fe4c2a42836ccc82e143133, type: 2}
     - target: {fileID: 100000, guid: 5f49a5bf5dac25b46942a10928552633, type: 3}
       propertyPath: m_Name
       value: JeterR_Wall (13)
