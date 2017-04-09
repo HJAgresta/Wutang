@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731332, g: 0.13414454, b: 0.12108202, a: 1}
+  m_IndirectSpecularColor: {r: 0.114799544, g: 0.1197665, b: 0.10576065, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -20765,6 +20765,7 @@ GameObject:
   - component: {fileID: 627829187}
   - component: {fileID: 627829186}
   - component: {fileID: 627829185}
+  - component: {fileID: 627829188}
   m_Layer: 0
   m_Name: matches
   m_TagString: Untagged
@@ -20835,6 +20836,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627829183}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &627829188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627829183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b1b7c194d12fd4786788b5aa066f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  playerpub: {fileID: 187630911}
+  act: {fileID: 825514801}
 --- !u!1 &628190190
 GameObject:
   m_ObjectHideFlags: 0
@@ -26826,6 +26841,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 825514800}
+  - component: {fileID: 825514801}
   m_Layer: 0
   m_Name: LivingRoom
   m_TagString: Untagged
@@ -26856,6 +26872,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &825514801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 825514799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa1421e6b1b1fe40aa5931251dd4455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  playerpub: {fileID: 187630911}
+  steps: 2
+  act: {fileID: 1582193902}
 --- !u!1 &825744562
 GameObject:
   m_ObjectHideFlags: 0
@@ -28719,6 +28750,7 @@ GameObject:
   - component: {fileID: 874097479}
   - component: {fileID: 874097478}
   - component: {fileID: 874097477}
+  - component: {fileID: 874097480}
   m_Layer: 0
   m_Name: firewood
   m_TagString: Untagged
@@ -28790,6 +28822,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 874097475}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &874097480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 874097475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b1b7c194d12fd4786788b5aa066f46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  playerpub: {fileID: 187630911}
+  act: {fileID: 825514801}
 --- !u!1 &874319637
 GameObject:
   m_ObjectHideFlags: 0
@@ -29671,7 +29717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 436.5
+      value: 254
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -29679,7 +29725,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -124.6
+      value: -198.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -48446,6 +48492,7 @@ GameObject:
   - component: {fileID: 1582193901}
   - component: {fileID: 1582193900}
   - component: {fileID: 1582193899}
+  - component: {fileID: 1582193902}
   m_Layer: 0
   m_Name: fireplace
   m_TagString: Untagged
@@ -48516,6 +48563,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582193897}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1582193902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582193897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7976dbd7922167449a8bce0eb910206b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: 1
+  act: {fileID: 1621383382}
+  player: {fileID: 187630911}
 --- !u!1 &1585845859
 GameObject:
   m_ObjectHideFlags: 0
@@ -49762,7 +49823,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &1621383383
 BoxCollider:
   m_ObjectHideFlags: 0
