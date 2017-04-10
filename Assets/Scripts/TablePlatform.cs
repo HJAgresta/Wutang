@@ -5,7 +5,7 @@ using UnityEngine;
 public class TablePlatform : PuzzleObject {
     public PuzzleObject act;
     private bool go = false;
-    Vector3 oldPos;
+    private Vector3 oldPos;
 
     void Start()
     {

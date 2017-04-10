@@ -32,7 +32,6 @@ public class Inventory : MonoBehaviour {
 
     public void emptyInventory()
     {
-
         carry = false;
         Debug.Log("drop");
         carryObject.transform.parent = null;
