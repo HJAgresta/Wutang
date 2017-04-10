@@ -33,10 +33,7 @@ public class ItemHolder : PuzzleObject {
                 current++;
                 inHand--;
 
-                if(current == items)
-                {
-                    act.activate();
-                }
+                act.activate();
             }
         }
 	}

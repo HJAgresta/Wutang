@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.16003798, g: 0.19977081, b: 0.2786975, a: 1}
+  m_IndirectSpecularColor: {r: 0.16003785, g: 0.19977067, b: 0.27869627, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3583,7 +3583,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &99083893
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6373,8 +6373,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  openThreshhold: 350
-  clockwise: 1
+  openThreshhold: 351
+  clockwise: 0
 --- !u!65 &183091997
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15294,7 +15294,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &435810708
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24719,7 +24719,7 @@ MonoBehaviour:
   interactable: 1
   knife: {fileID: 610056478}
   playerpub: {fileID: 187630911}
-  act: {fileID: 99083892}
+  act: {fileID: 1470528218}
   items: 3
 --- !u!1 &656968849 stripped
 GameObject:
@@ -25244,7 +25244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 594029364}
   dist: 0.2
 --- !u!1 &670083661
 GameObject:
@@ -33334,7 +33334,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 24.2
+      value: 32.57
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -33342,7 +33342,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -22.6
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -33350,7 +33350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.z
@@ -33358,7 +33358,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
@@ -33458,7 +33458,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Height
@@ -33522,7 +33522,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 270
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &889587477
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35681,7 +35681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 655450831}
 --- !u!1 &961465017
 GameObject:
   m_ObjectHideFlags: 0
@@ -42691,7 +42691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 590563814}
 --- !u!1 &1162896272
 GameObject:
   m_ObjectHideFlags: 0
@@ -43583,7 +43583,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 300
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &1195863269
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48298,7 +48298,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &1343479972
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50924,11 +50924,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 555a20664dfa71f4aa34cd0849de9d15, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.09
+      value: -16.57
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 555a20664dfa71f4aa34cd0849de9d15, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.36
+      value: -25.25
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 555a20664dfa71f4aa34cd0849de9d15, type: 3}
       propertyPath: m_LocalRotation.x
@@ -52061,7 +52061,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   steps: 3
-  act: {fileID: 655450831}
+  act: {fileID: 99083892}
 --- !u!1 &1470652208
 GameObject:
   m_ObjectHideFlags: 0
@@ -54589,7 +54589,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5aa1b0ebf7bdd2546a7370213e53351b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -22.57
+      value: -23.37
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5aa1b0ebf7bdd2546a7370213e53351b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56948,7 +56948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 655450831}
 --- !u!1 &1651967685
 GameObject:
   m_ObjectHideFlags: 0
@@ -68745,6 +68745,11 @@ Prefab:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 114116079839608028, guid: 01e5389ed7ad6da4aa08c557de359e05,
+        type: 2}
+      propertyPath: clockwise
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 01e5389ed7ad6da4aa08c557de359e05, type: 2}
   m_IsPrefabParent: 0
@@ -69717,7 +69722,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 1437802439}
 --- !u!23 &2031663495
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -71432,7 +71437,7 @@ MonoBehaviour:
   interactable: 1
   playerpub: {fileID: 187630911}
   openThreshhold: 350
-  clockwise: 1
+  clockwise: 0
 --- !u!65 &2083771874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -71466,7 +71471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   playerpub: {fileID: 187630911}
-  act: {fileID: 0}
+  act: {fileID: 655450831}
 --- !u!1001 &2088224531
 Prefab:
   m_ObjectHideFlags: 0
