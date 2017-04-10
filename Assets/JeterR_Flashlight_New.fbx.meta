@@ -1,27 +1,15 @@
 fileFormatVersion: 2
-guid: c40bf25a20464a84fabf5ad3565dcabe
-timeCreated: 1488825680
-licenseType: Pro
+guid: d297862e8deb54a48accd66facc02e84
+timeCreated: 1491782025
+licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: FL_OBJ:pCylinder1
-    100002: FL_OBJ:pCylinder2
-    100004: FL_OBJ:pCylinder2 1
-    100006: FL_OBJ:transform1
-    100008: FL_OBJ:transform2
-    100010: group
-    100012: //RootNode
-    400000: FL_OBJ:pCylinder1
-    400002: FL_OBJ:pCylinder2
-    400004: FL_OBJ:pCylinder2 1
-    400006: FL_OBJ:transform1
-    400008: FL_OBJ:transform2
-    400010: group
-    400012: //RootNode
-    2300000: FL_OBJ:pCylinder2
-    3300000: FL_OBJ:pCylinder2
-    4300000: FL_OBJ:pCylinder2
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: flashlight3
     9500000: //RootNode
   materials:
     importMaterials: 1

@@ -9,7 +9,6 @@ public class Key : followObject
     {
     }
 
-
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {

@@ -38,6 +38,7 @@ public class Inventory : MonoBehaviour {
         carryObject.transform.parent = null;
         carryObject.GetComponent<Rigidbody>().useGravity = true;
     }
+
 	void Update()
 	{
         if (Input.GetMouseButtonDown(0))
