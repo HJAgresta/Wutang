@@ -7,9 +7,9 @@ public class OpenDesk : PuzzleObject
     //moves any item in the negative Z axis
 
     bool go = false;
-    float oldPos;
+    Vector3 oldPos;
     public PuzzleObject act;
-    public int dist;
+    public float dist;
 
     public override void activate()
     {
@@ -18,14 +18,13 @@ public class OpenDesk : PuzzleObject
 
     void Start()
     {
-        oldPos = gameObject.transform.position.z;
-        dist = Mathf.Abs(dist);
+        oldPos = gameObject.transform.position;
     }
     // Update is called once per frame
 
     void Update()
     {
-        if (go && dist > Mathf.Abs(oldPos - gameObject.transform.position.z))
+        if (go && dist > Vector3.Distance(oldPos, gameObject.transform.position))
         {
             gameObject.transform.Translate(new Vector3(0, 0, -Time.deltaTime * 10));
             act.activate();
