@@ -10,7 +10,7 @@ public class TakeItem : PuzzleObject {
 
     // Update is called once per frame
     void Update () {
-        if (Vector3.Distance(playerpub.transform.position, this.transform.position) < 20)
+        if (Vector3.Distance(playerpub.transform.position, this.transform.position) < 10)
         {
             //push e to pick up key
             if (Input.GetKeyDown("e"))

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemHolder : PuzzleObject {
 
-    public GameObject knife;
+    public GameObject baseObject;
     public GameObject playerpub;
     private bool giveable = true;
     public PuzzleObject act;
@@ -21,15 +21,15 @@ public class ItemHolder : PuzzleObject {
 	
 	// Update is called once per frame
 	void Update () {
-        if (giveable && Vector3.Distance(playerpub.transform.position, this.transform.position) < 19 && Input.GetKeyDown("e"))
+        if (giveable && Vector3.Distance(playerpub.transform.position, this.transform.position) < 14 && Input.GetKeyDown("e"))
         {
             int loop = inHand;
 
             for(int i = 0; i < loop; i++)
             {
-                GameObject spawned = GameObject.Instantiate(knife, GameObject.Find("KnifeHolder").transform, true);
+                GameObject spawned = GameObject.Instantiate(baseObject, GameObject.Find("KnifeHolder").transform, true);
                 spawned.transform.Translate(new Vector3(move, 0, 0));
-                move = move - 0.9f;
+                move = move - 0.8f;
                 current++;
                 inHand--;
 
