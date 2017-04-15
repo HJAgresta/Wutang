@@ -6,7 +6,12 @@ public class TakeItem : PuzzleObject {
 
     public GameObject playerpub;
     public PuzzleObject act;
+    private AudioSource aud;
 
+    private void Start()
+    {
+        aud = GetComponentInParent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update () {
@@ -16,7 +21,8 @@ public class TakeItem : PuzzleObject {
             if (Input.GetKeyDown("e"))
             {
                 act.activate();
-                Destroy(gameObject);
+                Destroy(gameObject, .2f);
+                aud.Play();
             }
         }
     }

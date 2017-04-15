@@ -41,6 +41,7 @@ public class LightPuzzle : MonoBehaviour {
         {
             if (Input.GetKeyDown("e") && Vector3.Distance(player.transform.position, li.transform.position) < 8)
             {
+                li.GetComponentInParent<AudioSource>().Play();
                 if(li.enabled)
                 {
                     li.enabled = false;

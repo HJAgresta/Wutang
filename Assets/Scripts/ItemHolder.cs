@@ -14,6 +14,12 @@ public class ItemHolder : PuzzleObject {
     private int current = 0;
     private int inHand = 0;
     private float move = -0.9f;
+    private AudioSource aud;
+
+    private void Start()
+    {
+        aud = GetComponentInParent<AudioSource>();
+    }
 
     public override void activate()
     {
@@ -26,6 +32,7 @@ public class ItemHolder : PuzzleObject {
         if (giveable && Vector3.Distance(playerpub.transform.position, this.transform.position) < 14 && Input.GetKeyDown("e"))
         {
             int loop = inHand;
+            aud.Play();
 
             for(int i = 0; i < loop; i++)
             {

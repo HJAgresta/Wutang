@@ -10,15 +10,18 @@ public class OpenDesk : PuzzleObject
     Vector3 oldPos;
     public PuzzleObject act;
     public float dist;
+    AudioSource aud;
 
     public override void activate()
     {
-        go = true; 
+        if (!go) aud.Play();
+        go = true;
     }
 
     void Start()
     {
         oldPos = gameObject.transform.position;
+        aud = GetComponentInParent<AudioSource>();
     }
     // Update is called once per frame
 

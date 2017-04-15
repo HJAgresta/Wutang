@@ -9,10 +9,12 @@ public class Lever : PuzzleObject{
     public Animation ani;
     public PuzzleObject act;
     public bool active;
+    private AudioSource aud;
 
     // Use this for initialization
     void Start () {
-	}
+        aud = GetComponentInParent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,22 +22,16 @@ public class Lever : PuzzleObject{
         playerpos = playerpub.transform.position;
 
 
-        if (Vector3.Distance(playerpos, this.transform.position) < 19)
+        if (active && Vector3.Distance(playerpos, this.transform.position) < 19 && Input.GetKeyDown("e"))
         {
-            //push e to pick up key
-            if (Input.GetKeyDown("e"))
-            {
-                if(active)
-                {
-                    ani.Play();
-                    act.activate();
-                }
-            }
+            ani.Play();
+            aud.Play();
+            active = false;
         }
     }
 
     public override void activate()
     {
-                active = true;
+        active = false;
     }
 }

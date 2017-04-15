@@ -12,11 +12,13 @@ public class ButtonDown : PuzzleObject {
     public PuzzleObject act;
     public float dist;
     private Vector3 playerpos;
+    private AudioSource aud;
 
     void Start()
     {
         oldPos = gameObject.transform.position.y;
         dist = Mathf.Abs(dist);
+        aud = GetComponentInParent<AudioSource>();
     }
     // Update is called once per frame
 
@@ -48,6 +50,7 @@ public class ButtonDown : PuzzleObject {
         {
             go = true;
             act.activate();
+            aud.Play();
         }
     }
 

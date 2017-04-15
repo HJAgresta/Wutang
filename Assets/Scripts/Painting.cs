@@ -8,11 +8,14 @@ public class Painting : PuzzleObject {
     private Vector3 playerpos;
     public PuzzleObject act;
     private bool move;
+    private AudioSource aud;
+    private bool active = false;
 
     // Use this for initialization
     void Start () {
         move = false;
-	}
+        aud = GetComponentInParent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -21,7 +24,7 @@ public class Painting : PuzzleObject {
         if (Vector3.Distance(playerpos, this.transform.position) < 19)
         {
             //push e to move the painting
-            if (Input.GetKeyDown("e"))
+            if (!active && Input.GetKeyDown("e"))
             {
                 move = true;
             }
@@ -31,11 +34,14 @@ public class Painting : PuzzleObject {
         {
             if (this.transform.position.y > -28.2)
             {
-                gameObject.transform.Translate(new Vector3(0f, 9.75f * Time.deltaTime, 0f));
+                gameObject.transform.Translate(new Vector3(0f, 15f * Time.deltaTime, 0f));
             }
             else
             {
+                aud.Play();
                 activate();
+                move = false;
+                active = true;
             }
         }
     }

@@ -10,10 +10,12 @@ public class Button : PuzzleObject
     public PuzzleObject act;
 
     private Vector3 playerpos;
+    private AudioSource aud;
 
     void Start()
     {
         oldPos = gameObject.transform.position;
+        aud = GetComponentInParent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class Button : PuzzleObject
         {
             go = true;
             act.activate();
+            aud.Play();
         }
 
         if (go && 0.5 > Vector3.Distance(oldPos, gameObject.transform.position))
