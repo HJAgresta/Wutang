@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour {
 
-    public Camera camera1;
-    bool carry;
-    GameObject carryObject;
+    [System.NonSerialized]public Camera camera1;
+    [System.NonSerialized]public bool carry;
+    [System.NonSerialized]public GameObject carryObject;
     [SerializeField]public GUIStyle style;
     [SerializeField]public GUIStyle otherstyle;
 
     
-
+    void Start()
+    {
+        camera1 = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>();
+    }
     void OnGUI()
     {
         Ray ray = camera1.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
@@ -22,7 +25,7 @@ public class Inventory : MonoBehaviour {
 
             GUI.Box(new Rect((Screen.width / 2)-5, (Screen.height / 2)-5, 10, 10), "", style);
 
-            if (hit.collider.gameObject.GetComponent<followObject>() != null && hit.collider.gameObject.GetComponent<followObject>().interactable == true)
+            if (hit.collider.gameObject.GetComponent<PuzzleObject>() != null && hit.collider.gameObject.GetComponent<PuzzleObject>().interactable == true)
             {
                 GUI.Box(new Rect((Screen.width / 2)-5, (Screen.height / 2)-5, 10, 10), "", otherstyle);
             }
@@ -36,6 +39,7 @@ public class Inventory : MonoBehaviour {
         Debug.Log("drop");
         carryObject.transform.parent = null;
         carryObject.GetComponent<Rigidbody>().useGravity = true;
+        carryObject.GetComponent<Collider>().enabled = true;
     }
 
 	void Update()
@@ -61,6 +65,8 @@ public class Inventory : MonoBehaviour {
                             carryObject.transform.localPosition = new Vector3(0.184f,0.677f,0.6f);
                             carry = true;
                             carryObject.GetComponent<Rigidbody>().useGravity = false;
+
+                            carryObject.GetComponent<Collider>().enabled = false;
                         }
                         else if(hit.collider.gameObject.GetComponent<PuzzleObject>() != null)
                         {
@@ -72,11 +78,24 @@ public class Inventory : MonoBehaviour {
             }
             else
             {
-                carry = false;
-                Debug.Log("drop");
-                carryObject.transform.parent = null;
-                carryObject.GetComponent<Rigidbody>().useGravity = true;
-                carryObject = null;
+                Ray ray = camera1.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+                Debug.DrawRay(ray.origin, ray.direction * 20, Color.yellow);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Debug.Log(hit.collider.gameObject.name);
+                    if (hit.collider != null)
+                    {
+                        if (hit.collider.gameObject.GetComponent<PuzzleObject>() != null)
+                        {
+                            hit.collider.gameObject.GetComponent<PuzzleObject>().activate();
+                            return;
+                        }
+                    }
+                }
+
+                emptyInventory();
             }
         }
 	}

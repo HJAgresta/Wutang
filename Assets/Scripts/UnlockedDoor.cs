@@ -2,28 +2,93 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnlockedDoor : MonoBehaviour {
-
-    public GameObject playerpub;
-    private Vector3 playerpos;
-    private bool opening = false;
-    private Vector3 vec;
-    private Vector3 endVec = new Vector3(0f, 270f, 0f);
-
+[RequireComponent(typeof(BoxCollider))]
+public class UnlockedDoor : PuzzleObject {
+ 
     // Update is called once per frame
+    bool unlocked = false;
+    public float openThreshhold;
+    private bool lessthan = false;
+    public bool clockwise = true;
+
+    public override void activate()
+    {
+        unlocked = true;
+    }
+    void Start()
+    {
+        if (gameObject.transform.eulerAngles.y < openThreshhold)
+        {
+            lessthan = true;
+        }
+    }
     void Update()
     {
-        playerpos = playerpub.transform.position;
 
-        if (Vector3.Distance(playerpos, this.transform.position) < 25 && Input.GetKeyDown("e"))
+        if (lessthan && unlocked)
         {
-            opening = true;
+            if (!clockwise)
+            {
+                if (gameObject.transform.eulerAngles.y < openThreshhold)
+                {
+                    gameObject.transform.Rotate(0, 50 * Time.deltaTime, 0);
+                }
+                else
+                {
+                    gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
+                    unlocked = false;
+                }
+
+
+            }
+            else
+            {
+                if (gameObject.transform.eulerAngles.y < openThreshhold)
+                {
+                    gameObject.transform.Rotate(0, -50 * Time.deltaTime, 0);
+                }
+                else
+                {
+                    gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
+                    unlocked = false;
+                }
+
+            }
         }
-
-        if (opening)
+        else
         {
-            vec = Vector3.Lerp(vec, endVec, Time.deltaTime * 50);
-            this.transform.eulerAngles = vec;
+            if (!clockwise)
+            {
+                if (unlocked)
+                {
+                    if (gameObject.transform.eulerAngles.y > openThreshhold)
+                    {
+                        gameObject.transform.Rotate(0, 50 * Time.deltaTime, 0);
+                    }
+                    else
+                    {
+                        gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
+                        unlocked = false;
+                    }
+                }
+
+            }
+            else
+            {
+
+                if (unlocked)
+                {
+                    if (gameObject.transform.eulerAngles.y > openThreshhold)
+                    {
+                        gameObject.transform.Rotate(0, -50 * Time.deltaTime, 0);
+                    }
+                    else
+                    {
+                        gameObject.transform.eulerAngles = new Vector3(0f, openThreshhold, 0f);
+                        unlocked = false;
+                    }
+                }
+            }
         }
     }
 }

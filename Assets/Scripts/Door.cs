@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider))]
 public class Door : PuzzleObject
 {
     public GameObject playerpub;
-    private Vector3 playerpos;
     bool unlocked = false;
     public float openThreshhold;
     private bool lessthan = false;
@@ -13,10 +13,18 @@ public class Door : PuzzleObject
 
     public override void activate()
     {
-        unlocked = true;
+        if(playerpub.GetComponentInChildren<Key>()!=null)
+        {
+            unlocked = true;
+            GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
+            playerpub.GetComponentInChildren<Inventory>().emptyInventory();
+            Destroy(key);
+        }
     }
     void Start ()
     {
+        playerpub = GameObject.FindGameObjectWithTag("Player");
+
         if(gameObject.transform.eulerAngles.y < openThreshhold)
         {
             lessthan = true;
