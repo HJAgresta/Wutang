@@ -28,6 +28,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
 
+        public Transform vrCamera;
+        private Vector3 Forward;
         private Camera m_Camera;
         private bool m_Jump;
         private float m_YRotation;
@@ -80,7 +82,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MoveDir.y = 0f;
             }
 
-            m_PreviouslyGrounded = m_CharacterController.isGrounded;
+             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
 
 
@@ -97,7 +99,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
-            Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+            Vector3 desiredMove = m_Camera.transform.forward*m_Input.y + m_Camera.transform.right*m_Input.x;
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -236,6 +238,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
+            Forward = vrCamera.TransformDirection(Vector3.forward);
+            m_Camera.transform.rotation = Quaternion.LookRotation(Forward);
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
