@@ -38,7 +38,7 @@ public class Painting : PuzzleObject {
             }
             else
             {
-                aud.Play();
+                //aud.Play();
                 activate();
                 move = false;
                 active = true;

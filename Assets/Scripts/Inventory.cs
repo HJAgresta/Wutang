@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour {
     
     void Start()
     {
-        camera1 = GameObject.Find("FirstPersonCharacter").GetComponent<Camera>();
+        camera1 = GameObject.Find("FirstPersonCharacter (eye)").GetComponent<Camera>();
     }
     void OnGUI()
     {
@@ -36,7 +36,6 @@ public class Inventory : MonoBehaviour {
     public void emptyInventory()
     {
         carry = false;
-        Debug.Log("drop");
         carryObject.transform.parent = null;
         carryObject.GetComponent<Rigidbody>().useGravity = true;
         carryObject.GetComponent<Collider>().enabled = true;
