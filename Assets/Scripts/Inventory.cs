@@ -15,6 +15,7 @@ public class Inventory : MonoBehaviour {
     {
         camera1 = GameObject.Find("FirstPersonCharacter (eye)").GetComponent<Camera>();
     }
+
     void OnGUI()
     {
         Ray ray = camera1.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
@@ -43,9 +44,8 @@ public class Inventory : MonoBehaviour {
 
 	void Update()
 	{
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0)
         {
-
             if(!carry)
             {
                 Ray ray = camera1.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));

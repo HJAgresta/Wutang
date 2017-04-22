@@ -27,7 +27,7 @@ public class TablePlatform : PuzzleObject {
         }
 	}
 
-    public void activate()
+    public override void activate()
     {
 
         go = true;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class getFlashlight : MonoBehaviour {
+public class getFlashlight : PuzzleObject {
 
     public GameObject Player;
     private AudioSource aud;
@@ -16,18 +16,23 @@ public class getFlashlight : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         
-        if (!poss && Vector3.Distance(Player.transform.position, this.transform.position) < 15)
+        if (poss)
         {
-            if (Input.GetKeyDown("e"))
-            {
-                this.transform.position = Player.transform.position;
-                this.transform.rotation = Player.transform.rotation;
-                this.transform.SetParent(Player.transform);
-                this.transform.Rotate(0, 180, 0);
-                this.transform.Translate(-2, -1, 0);
-                aud.Play();
-                poss = true;
-            }
+            this.transform.position = Player.transform.position;
+            this.transform.rotation = Player.transform.rotation;
+            this.transform.SetParent(Player.transform);
+            this.transform.Rotate(0, 180, 0);
+            this.transform.Translate(-2, -1, 0);
+            aud.Play();
+            poss = false;
         }
 	}
+
+    public override void activate()
+    {
+        if(Vector3.Distance(Player.transform.position, this.transform.position) < 15)
+        {
+            poss = true;
+        }
+    }
 }
