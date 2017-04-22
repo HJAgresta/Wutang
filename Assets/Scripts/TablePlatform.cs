@@ -18,7 +18,7 @@ public class TablePlatform : PuzzleObject {
     void Update () {
         if (go && 0.5 > Vector3.Distance(oldPos, gameObject.transform.position))
         {
-            if (!aud.isPlaying)
+            if (!aud.isPlaying && aud != null)
             {
                 aud.Play();
             }
@@ -29,7 +29,6 @@ public class TablePlatform : PuzzleObject {
 
     public override void activate()
     {
-
         go = true;
     }
 }

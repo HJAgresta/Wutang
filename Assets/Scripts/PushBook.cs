@@ -33,7 +33,7 @@ public class PushBook : PuzzleObject {
     // Update is called once per frame
     void Update()
     {
-        if (active && Vector3.Distance(player.transform.position, this.transform.position) < 11 && Input.GetKeyDown("e"))
+        if (active && Vector3.Distance(player.transform.position, this.transform.position) < 15 && Input.GetKeyDown("e"))
         {
             move = true;
             aud.Play();
@@ -41,11 +41,9 @@ public class PushBook : PuzzleObject {
 
         if (move && Vector3.Distance(initialpos, this.transform.position) < 1)
         {
-            if (PositiveZ)
-            {
-                this.transform.Translate(direction * Time.deltaTime, Space.World);
-                activate();
-            }
+
+            this.transform.Translate(direction * Time.deltaTime, Space.World);
+            activate();
         }
         else if (move)
         {

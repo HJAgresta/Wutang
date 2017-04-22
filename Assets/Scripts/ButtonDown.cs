@@ -36,9 +36,9 @@ public class ButtonDown : PuzzleObject {
             gameObject.transform.Translate(new Vector3(0, Time.deltaTime * 3, 0));
         }
 
-        if(this.transform.position.y > oldPos)
+        if(this.transform.position.y > oldPos + 0.1f)
         {
-            gameObject.transform.Translate(new Vector3(0f, -5f, 0f));
+            gameObject.transform.Translate(new Vector3(0f, -.5f, 0f));
         }
 
         if(dist <= Mathf.Abs(oldPos - gameObject.transform.position.y))
@@ -46,7 +46,7 @@ public class ButtonDown : PuzzleObject {
             popUp();
         }
 
-        if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 8)
+        if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 9)
         {
             go = true;
             act.activate();
@@ -57,6 +57,5 @@ public class ButtonDown : PuzzleObject {
     void popUp()
     {
         go = false;
-        
     }
 }

@@ -22,7 +22,10 @@ public class TakeItem : PuzzleObject {
             {
                 act.activate();
                 Destroy(gameObject, .2f);
-                aud.Play();
+                if (aud != null)
+                {
+                    aud.Play();
+                }
             }
         }
     }
