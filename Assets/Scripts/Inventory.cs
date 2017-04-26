@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Valve.VR;
 
 public class Inventory : MonoBehaviour {
 
@@ -9,6 +10,9 @@ public class Inventory : MonoBehaviour {
     [System.NonSerialized]public GameObject carryObject;
     [SerializeField]public GUIStyle style;
     [SerializeField]public GUIStyle otherstyle;
+    public SteamVR_Controller left;
+    public SteamVR_Controller right;
+    public bool triggerClicked;
 
     
     void Start()
@@ -44,7 +48,13 @@ public class Inventory : MonoBehaviour {
 
 	void Update()
 	{
-        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0)
+        if (triggerClicked)
+        {
+            Debug.Log("clicked");
+        }
+
+
+        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0 || triggerClicked)
         {
             if(!carry)
             {
