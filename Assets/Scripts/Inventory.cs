@@ -17,7 +17,7 @@ public class Inventory : MonoBehaviour {
     
     void Start()
     {
-        camera1 = GameObject.Find("FirstPersonCharacter (eye)").GetComponent<Camera>();
+        camera1 = GameObject.Find("Camera (eye)").GetComponent<Camera>();
     }
 
     void OnGUI()

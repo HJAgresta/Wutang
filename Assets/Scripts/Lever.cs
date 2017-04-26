@@ -13,8 +13,6 @@ public class Lever : PuzzleObject{
     void Start () {
         aud = GetComponentInParent<AudioSource>();
     }
-	
-	
 
     public override void activate()
     {

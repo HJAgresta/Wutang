@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider))]
 public class Door : PuzzleObject
 {
-    public GameObject playerpub;
+    private GameObject playerpub;
     bool unlocked = false;
     public float openThreshhold;
     private bool lessthan = false;
