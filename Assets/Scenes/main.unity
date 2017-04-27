@@ -984,7 +984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 0
 --- !u!82 &22359418
@@ -1305,7 +1304,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1001 &24644439
 Prefab:
@@ -2622,7 +2620,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   baseObject: {fileID: 561228950}
-  playerpub: {fileID: 517618078}
   parent: {fileID: 46289404}
   act: {fileID: 152220674}
   items: 2
@@ -2812,7 +2809,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 651.2
   min: 650.4
@@ -7004,7 +7000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1650059783}
 --- !u!82 &114957940
 AudioSource:
@@ -8701,7 +8696,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 2
   act: {fileID: 46289403}
 --- !u!1 &152241943
@@ -10179,7 +10173,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1650059783}
 --- !u!65 &181863149
 BoxCollider:
@@ -11120,7 +11113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 844942023}
   dist: 0.2
 --- !u!114 &202176503
@@ -11135,7 +11127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 109114933}
   dist: 0.2
 --- !u!82 &202176508
@@ -12930,7 +12921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 5
   act: {fileID: 923800228}
 --- !u!1 &235580303
@@ -13395,7 +13385,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1001 &244240133
 Prefab:
   m_ObjectHideFlags: 0
@@ -13478,7 +13467,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 58498065}
   dist: 0.2
 --- !u!82 &245410572
@@ -17675,7 +17663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 0
 --- !u!82 &316596682
@@ -19281,7 +19268,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 0
 --- !u!82 &340785825
@@ -19496,7 +19482,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 660160747}
   dist: 0.2
 --- !u!82 &348049672
@@ -19757,7 +19742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 1
 --- !u!82 &350993034
@@ -20536,7 +20520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 726.4
   min: 725.8
@@ -20896,7 +20879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 566400591}
   dist: 0.2
 --- !u!114 &371848561
@@ -20911,7 +20893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1073777371}
   dist: 0.2
 --- !u!82 &371848566
@@ -22800,7 +22781,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 488351699}
   max: 885
   min: 884
@@ -24831,7 +24811,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1001 &446871529
 Prefab:
   m_ObjectHideFlags: 0
@@ -25254,7 +25233,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 762380400}
   max: -94
   min: -113
@@ -25468,7 +25446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 0
 --- !u!82 &451072534
@@ -26083,7 +26060,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1 &460669337 stripped
 GameObject:
@@ -26195,7 +26171,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1 &462185264
 GameObject:
@@ -26648,7 +26623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1650059783}
 --- !u!65 &466862813
 BoxCollider:
@@ -27258,7 +27232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 109463103}
   dist: 0.2
 --- !u!114 &481248518
@@ -27273,7 +27246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 109114933}
   dist: 0.2
 --- !u!82 &481248523
@@ -32187,7 +32159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 1
 --- !u!82 &564523237
@@ -32709,7 +32680,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  Player: {fileID: 517618078}
 --- !u!82 &569122173
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33232,7 +33202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 109463103}
   dist: 0.2
 --- !u!114 &579150557
@@ -33247,7 +33216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1512724544}
   dist: 0.2
 --- !u!82 &579150562
@@ -33752,7 +33720,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1655187276}
 --- !u!23 &585986675
 MeshRenderer:
@@ -34973,7 +34940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1664374311}
   dist: 0.2
 --- !u!82 &606681169
@@ -36693,7 +36659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1001 &628355676
 Prefab:
@@ -38605,7 +38570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   baseObject: {fileID: 610056478}
-  playerpub: {fileID: 517618078}
   parent: {fileID: 655450831}
   act: {fileID: 1470528218}
   items: 3
@@ -38630,7 +38594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 1
 --- !u!82 &656968855
@@ -39393,7 +39356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 675.7
   min: 674.9
@@ -39653,7 +39615,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 594029364}
   dist: 0.2
 --- !u!82 &668447709
@@ -43236,7 +43197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 2
   act: {fileID: 1602562482}
 --- !u!1001 &762569854
@@ -45466,7 +45426,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1001 &803785553
 Prefab:
   m_ObjectHideFlags: 0
@@ -45972,7 +45931,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 1
 --- !u!82 &809182196
@@ -46149,7 +46107,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1001 &811785489
 Prefab:
   m_ObjectHideFlags: 0
@@ -47062,7 +47019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 2
   act: {fileID: 1582193902}
 --- !u!1001 &829289180
@@ -48678,7 +48634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 698.2
   min: 697.4
@@ -48868,7 +48823,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1001 &862623680
 Prefab:
@@ -49512,7 +49466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1 &870004178
 GameObject:
   m_ObjectHideFlags: 0
@@ -50255,7 +50208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 8
   act: {fileID: 764679817}
 --- !u!1 &879428885 stripped
@@ -52206,11 +52158,11 @@ Prefab:
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1155439460}
+      objectReference: {fileID: 1480414928}
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 920978923}
+      objectReference: {fileID: 1551019921}
     - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_LocalScale.x
       value: 15.381678
@@ -52329,7 +52281,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Name
-      value: Player
+      value: PlayerA
+      objectReference: {fileID: 0}
+    - target: {fileID: 8198212, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11420968, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
@@ -52544,35 +52500,6 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!21 &920978923
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-    - first:
-        name: _MainTex
-      second:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - first:
-        name: PixelSnap
-      second: 0
-    m_Colors:
-    - first:
-        name: _Color
-      second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &921212694 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 06cea1b7fcbc01646aa64432c54e8da6, type: 3}
@@ -54272,7 +54199,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 14.7
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -54280,7 +54207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -12.12
+      value: -83.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -54308,15 +54235,15 @@ Prefab:
       objectReference: {fileID: 1249863730}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalScale.x
-      value: 15.381678
+      value: 5.6024876
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalScale.y
-      value: 11.365745
+      value: 12.7891035
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalScale.z
-      value: 15.381674
+      value: 5.602485
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_Name
@@ -54593,7 +54520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 655450831}
 --- !u!1 &961465017
 GameObject:
@@ -55400,7 +55326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1650059783}
 --- !u!82 &977787009
 AudioSource:
@@ -58047,7 +57972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 751
   min: 750.4
@@ -60687,7 +60611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 0
-  playerpub: {fileID: 517618078}
   act: {fileID: 2127483768}
   max: 856.45
   min: 855.65
@@ -61967,7 +61890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 798
   min: 797.4
@@ -62529,7 +62451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1 &1134442746
 GameObject:
   m_ObjectHideFlags: 0
@@ -63074,7 +62995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 775.5
   min: 774.9
@@ -63194,7 +63114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 600.8
   min: 600
@@ -63607,134 +63526,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06cea1b7fcbc01646aa64432c54e8da6, type: 3}
   m_IsPrefabParent: 0
---- !u!43 &1155439460
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.15, y: 0, z: 0.9}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 13
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000803f0ad7233c0000403f000000000000803f0000803f0000803f00000000000000000000803f0ad7233c000040bf000000000000803f0000803f0000803f0000803f00000000000080bf0ad7233c000040bf000000000000803f0000803f0000803f0000000000000000000080bf0ad7233c0000403f000000000000803f0000803f0000803f0000803f000000003333933f0ad7233c6666663f000000000000803f0000803f00000000000000000000803f3333933f0ad7233c666666bf000000000000803f0000803f000000000000803f0000803f333393bf0ad7233c666666bf000000000000803f0000803f00000000000000000000803f333393bf0ad7233c6666663f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.15, y: 0, z: 0.9}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1 &1158651637
 GameObject:
   m_ObjectHideFlags: 0
@@ -63957,7 +63748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 590563814}
 --- !u!82 &1162722500
 AudioSource:
@@ -65311,7 +65101,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 8
   act: {fileID: 627061884}
 --- !u!4 &1194801165
@@ -65905,6 +65694,19 @@ MonoBehaviour:
     m_StretchWidth: 1
     m_StretchHeight: 0
   triggerClicked: 0
+--- !u!136 &1200195719
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200195712}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.867874
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1201501182
 GameObject:
   m_ObjectHideFlags: 0
@@ -68088,7 +67890,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 751
   min: 750.4
@@ -68968,7 +68769,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 46289404}
 --- !u!1 &1260653739
 GameObject:
@@ -69939,7 +69739,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 0
-  playerpub: {fileID: 0}
   steps: 7
   act: {fileID: 1181995899}
 --- !u!4 &1273127393
@@ -70414,7 +70213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 1
 --- !u!82 &1284502816
@@ -72192,7 +71990,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2002876332}
   dist: 0.2
 --- !u!114 &1312625727
@@ -72207,7 +72004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 898545977}
   dist: 0.2
 --- !u!82 &1312625732
@@ -75020,7 +74816,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 600.8
   min: 600
@@ -77114,7 +76909,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1273127392}
   PositiveZ: 0
 --- !u!114 &1402240383
@@ -78692,7 +78486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 815611888}
   max: 885
   min: 884
@@ -79957,7 +79750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 109114933}
   dist: 0.2
 --- !u!114 &1464753653
@@ -79972,7 +79764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1512724544}
   dist: 0.2
 --- !u!82 &1464753658
@@ -80730,7 +80521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 3
   act: {fileID: 99083892}
 --- !u!1 &1470652208
@@ -80992,6 +80782,134 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!43 &1480414928
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.15, y: 0, z: 0.9}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 13
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000803f0ad7233c0000403f000000000000803f0000803f0000803f00000000000000000000803f0ad7233c000040bf000000000000803f0000803f0000803f0000803f00000000000080bf0ad7233c000040bf000000000000803f0000803f0000803f0000000000000000000080bf0ad7233c0000403f000000000000803f0000803f0000803f0000803f000000003333933f0ad7233c6666663f000000000000803f0000803f00000000000000000000803f3333933f0ad7233c666666bf000000000000803f0000803f000000000000803f0000803f333393bf0ad7233c666666bf000000000000803f0000803f00000000000000000000803f333393bf0ad7233c6666663f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.15, y: 0, z: 0.9}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!1 &1480923290 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100004, guid: 09889fa7b8762874d9fd252e2caf701e, type: 3}
@@ -81177,7 +81095,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 626.5
   min: 625.7
@@ -81805,7 +81722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 1
 --- !u!82 &1498928873
@@ -81908,7 +81824,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 675.7
   min: 674.9
@@ -83998,6 +83913,35 @@ CapsuleCollider:
   m_Height: 1.1910517
   m_Direction: 1
   m_Center: {x: 0, y: 0.29136992, z: 0}
+--- !u!21 &1551019921
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: PixelSnap
+      second: 0
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1552284067
 Prefab:
   m_ObjectHideFlags: 0
@@ -84088,7 +84032,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 781622094}
   max: 576.4
   min: 574.6
@@ -84887,7 +84830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 0
-  playerpub: {fileID: 0}
   steps: 7
   act: {fileID: 1064476268}
 --- !u!4 &1574508723
@@ -85176,7 +85118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 0
   act: {fileID: 1621383382}
-  player: {fileID: 517618078}
 --- !u!1001 &1583834492
 Prefab:
   m_ObjectHideFlags: 0
@@ -85552,7 +85493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2002876332}
   dist: 0.2
 --- !u!114 &1587798600
@@ -85567,7 +85507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 566400591}
   dist: 0.2
 --- !u!82 &1587798605
@@ -87150,7 +87089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ced6f072a6e749a40ac568fce772c2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 517618078}
   l1: {fileID: 1004341146}
   l2: {fileID: 991054657}
   l3: {fileID: 1172472464}
@@ -88066,7 +88004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2112044460}
 --- !u!1 &1630151622
 GameObject:
@@ -88169,7 +88106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1290694488}
   dist: 0.2
 --- !u!82 &1631727718
@@ -88550,7 +88486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1001 &1636327651
 Prefab:
@@ -88850,7 +88785,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 1
 --- !u!82 &1639651985
@@ -89435,7 +89369,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactable: 1
   baseObject: {fileID: 1971115479}
-  playerpub: {fileID: 517618078}
   parent: {fileID: 1650059783}
   act: {fileID: 235398556}
   items: 5
@@ -89620,7 +89553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 655450831}
 --- !u!1 &1651967685
 GameObject:
@@ -92803,7 +92735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 0
-  playerpub: {fileID: 0}
   steps: 7
   act: {fileID: 2119887322}
 --- !u!1001 &1721356874
@@ -93438,7 +93369,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1 &1740557841 stripped
 GameObject:
@@ -93843,7 +93773,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 46289404}
 --- !u!1001 &1749597878
 Prefab:
@@ -94432,7 +94361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 898545977}
   dist: 0.2
 --- !u!114 &1754861935
@@ -94447,7 +94375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 566400591}
   dist: 0.2
 --- !u!82 &1754861940
@@ -94691,7 +94618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1001 &1756876090
 Prefab:
   m_ObjectHideFlags: 0
@@ -96709,7 +96635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 825514801}
 --- !u!65 &1794749304
 BoxCollider:
@@ -96895,7 +96820,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1650059783}
 --- !u!65 &1795557268
 BoxCollider:
@@ -99470,7 +99394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 762380400}
   max: -94
   min: -113
@@ -101078,7 +101001,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1194801164}
   max: 626.5
   min: 625.7
@@ -101366,7 +101288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
 --- !u!1 &1890986659
 GameObject:
   m_ObjectHideFlags: 0
@@ -103614,7 +103535,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 878835915}
 --- !u!1001 &1945897308
 Prefab:
@@ -104683,7 +104603,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 825514801}
 --- !u!4 &1962281765 stripped
 Transform:
@@ -104918,7 +104837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 0
 --- !u!82 &1968816457
@@ -106457,7 +106375,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 2098678892}
   max: 700.6
   min: 700
@@ -108642,7 +108559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 1437802439}
 --- !u!23 &2031663495
 MeshRenderer:
@@ -111169,7 +111085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 655450831}
 --- !u!1001 &2086088949
 Prefab:
@@ -111923,7 +111838,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 0}
   steps: 6
   act: {fileID: 950677115}
 --- !u!1 &2099575180
@@ -113207,7 +113121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  player: {fileID: 517618078}
   act: {fileID: 1719375136}
   PositiveZ: 1
 --- !u!82 &2121121475
@@ -113504,7 +113417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactable: 1
-  playerpub: {fileID: 517618078}
   act: {fileID: 933848674}
 --- !u!23 &2127483769
 MeshRenderer:
