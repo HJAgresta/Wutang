@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PushBook : PuzzleObject {
 
-    public GameObject player;
+    private GameObject player;
     private Vector3 initialpos;
     private bool move;
     private bool active;
@@ -16,6 +16,7 @@ public class PushBook : PuzzleObject {
     // Use this for initialization
     void Start()
     {
+        player = GameObject.Find("Player");
         initialpos = this.transform.position;
         move = false;
         active = true;

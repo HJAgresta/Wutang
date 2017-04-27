@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class getFlashlight : PuzzleObject {
 
-    public GameObject Player;
+    private GameObject player;
     private AudioSource aud;
     private bool poss = false;
 
     private void Start()
     {
+        player = GameObject.Find("Player");
         aud = GetComponentInParent<AudioSource>();
     }
 
@@ -18,9 +19,9 @@ public class getFlashlight : PuzzleObject {
         
         if (poss)
         {
-            this.transform.position = Player.transform.position;
-            this.transform.rotation = Player.transform.rotation;
-            this.transform.SetParent(Player.transform);
+            this.transform.position = player.transform.position;
+            this.transform.rotation = player.transform.rotation;
+            this.transform.SetParent(player.transform);
             this.transform.Rotate(0, 180, 0);
             this.transform.Translate(-2, -1, 0);
             aud.Play();
@@ -30,7 +31,7 @@ public class getFlashlight : PuzzleObject {
 
     public override void activate()
     {
-        if(Vector3.Distance(Player.transform.position, this.transform.position) < 15)
+        if(Vector3.Distance(player.transform.position, this.transform.position) < 15)
         {
             poss = true;
         }

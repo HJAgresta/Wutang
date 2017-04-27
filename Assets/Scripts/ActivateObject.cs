@@ -6,11 +6,12 @@ public class ActivateObject : PuzzleObject {
 
     private bool active;
     public PuzzleObject act;
-    public GameObject player;
+    private GameObject player;
 
 	// Use this for initialization
 	void Start () {
         active = false;
+        player = GameObject.Find("Player");
 	}
 	
 	// Update is called once per frame

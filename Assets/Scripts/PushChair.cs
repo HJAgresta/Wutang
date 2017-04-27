@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PushChair : PuzzleObject {
 
-    public GameObject playerpub;
+    private GameObject player;
     bool go = false;
     public PuzzleObject act;
     private Vector3 playerpos;
@@ -15,12 +15,13 @@ public class PushChair : PuzzleObject {
 
     private void Start()
     {
+        player = GameObject.Find("Player");
         aud = GetComponentInParent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update () {
-        playerpos = playerpub.transform.position;
+        playerpos = player.transform.position;
 
         if (active && Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 15)
         {

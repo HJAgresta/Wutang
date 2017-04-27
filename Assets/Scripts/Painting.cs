@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Painting : PuzzleObject {
 
-    public GameObject playerpub;
+    private GameObject player;
     private Vector3 playerpos;
     public PuzzleObject act;
     private bool move;
@@ -13,13 +13,14 @@ public class Painting : PuzzleObject {
 
     // Use this for initialization
     void Start () {
+        player = GameObject.Find("Player");
         move = false;
         aud = GetComponentInParent<AudioSource>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-        playerpos = playerpub.transform.position;
+        playerpos = player.transform.position;
 
         if (Vector3.Distance(playerpos, this.transform.position) < 19)
         {

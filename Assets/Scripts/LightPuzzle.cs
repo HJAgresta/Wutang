@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LightPuzzle : MonoBehaviour {
 
-    public GameObject player;
+    private GameObject player;
     public Light l1;
     public Light l2;
     public Light l3;
@@ -17,6 +17,8 @@ public class LightPuzzle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        player = GameObject.Find("Player");
+
         l1 = l1.GetComponent<Light>();
         l2 = l2.GetComponent<Light>();
         l3 = l3.GetComponent<Light>();

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NumUnlock : PuzzleObject {
-
-    public GameObject playerpub;
     public int steps;
     public PuzzleObject act;
     private int counter;

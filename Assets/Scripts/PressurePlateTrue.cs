@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PressurePlateTrue : PuzzleObject {
 
-    public GameObject player;
+    private GameObject player;
     private Vector3 initialpos;
     private bool move;
     private bool active;
@@ -13,6 +13,7 @@ public class PressurePlateTrue : PuzzleObject {
     // Use this for initialization
     void Start()
     {
+        player = GameObject.Find("Player");
         initialpos = this.transform.position;
         move = false;
         active = true;
@@ -21,11 +22,6 @@ public class PressurePlateTrue : PuzzleObject {
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(player.transform.position, this.transform.position) < 11 && Input.GetKeyDown("e"))
-        {
-            move = true;
-        }
-
         if (move && 1 > Mathf.Abs(initialpos.y - gameObject.transform.position.y))
         {
             this.transform.Translate(new Vector3(0f, -Time.deltaTime, 0f));
@@ -35,10 +31,21 @@ public class PressurePlateTrue : PuzzleObject {
 
     public override void activate()
     {
+        move = true;
+
         if (active)
         {
             act.activate();
             active = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other == player.GetComponent<CapsuleCollider>())
+        {
+            Debug.Log("Yo");
+            activate();
         }
     }
 }

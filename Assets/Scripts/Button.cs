@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Button : PuzzleObject
 {
-    public GameObject playerpub;
+    private GameObject player;
     bool go = false;
     Vector3 oldPos;
     public PuzzleObject act;
@@ -14,6 +14,7 @@ public class Button : PuzzleObject
 
     void Start()
     {
+        player = GameObject.Find("Player");
         oldPos = gameObject.transform.position;
         aud = GetComponentInParent<AudioSource>();
     }
@@ -21,7 +22,7 @@ public class Button : PuzzleObject
     // Update is called once per frame
     void Update()
     {
-        playerpos = playerpub.transform.position;
+        playerpos = player.transform.position;
 
         if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 19)
         {

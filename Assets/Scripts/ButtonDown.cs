@@ -6,7 +6,7 @@ public class ButtonDown : PuzzleObject {
 
     //pushes down a button
 
-    public GameObject playerpub;
+    private GameObject player;
     bool go = false;
     float oldPos;
     public PuzzleObject act;
@@ -16,6 +16,7 @@ public class ButtonDown : PuzzleObject {
 
     void Start()
     {
+        player = GameObject.Find("Player");
         oldPos = gameObject.transform.position.y;
         dist = Mathf.Abs(dist);
         aud = GetComponentInParent<AudioSource>();
@@ -24,7 +25,7 @@ public class ButtonDown : PuzzleObject {
 
     void Update()
     {
-        playerpos = playerpub.transform.position;
+        playerpos = player.transform.position;
 
         if (go && dist > Mathf.Abs(oldPos - gameObject.transform.position.y))
         {
