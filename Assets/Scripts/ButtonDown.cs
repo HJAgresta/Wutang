@@ -5,18 +5,15 @@ using UnityEngine;
 public class ButtonDown : PuzzleObject {
 
     //pushes down a button
-
-    private GameObject player;
+    
     bool go = false;
     float oldPos;
     public PuzzleObject act;
     public float dist;
-    private Vector3 playerpos;
     private AudioSource aud;
 
     void Start()
     {
-        player = GameObject.Find("Player");
         oldPos = gameObject.transform.position.y;
         dist = Mathf.Abs(dist);
         aud = GetComponentInParent<AudioSource>();
@@ -25,7 +22,6 @@ public class ButtonDown : PuzzleObject {
 
     void Update()
     {
-        playerpos = player.transform.position;
 
         if (go && dist > Mathf.Abs(oldPos - gameObject.transform.position.y))
         {
@@ -46,16 +42,19 @@ public class ButtonDown : PuzzleObject {
         {
             popUp();
         }
-
-        if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 9)
-        {
-            go = true;
-            act.activate();
-            aud.Play();
-        }
+        
     }
 
-    void popUp()
+
+    public override void activate()
+    {
+        go = true;
+        act.activate();
+        aud.Play();
+
+    }
+
+        void popUp()
     {
         go = false;
     }

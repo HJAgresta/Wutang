@@ -43,6 +43,7 @@ namespace VRTK
     {
         public uint controllerIndex;
     }
+    
 
     /// <summary>
     /// Event Payload
@@ -407,6 +408,11 @@ namespace VRTK
 
         protected virtual void Awake()
         {
+
+            if (PlayerPrefs.GetInt("vr") == 0)
+            {
+                Destroy(gameObject);
+            }
             cachedElements = new Dictionary<string, Transform>();
 
             var controllerHand = VRTK_DeviceFinder.GetControllerHand(gameObject);

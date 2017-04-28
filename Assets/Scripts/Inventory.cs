@@ -17,6 +17,11 @@ public class Inventory : MonoBehaviour {
     
     void Start()
     {
+        if (PlayerPrefs.GetInt("vr") == 1)
+        {
+            Destroy(gameObject);
+        }
+        
         camera1 = GameObject.Find("Camera (eye)").GetComponent<Camera>();
     }
 

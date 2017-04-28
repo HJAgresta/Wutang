@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PushBook : PuzzleObject {
-
-    private GameObject player;
+    
     private Vector3 initialpos;
     private bool move;
     private bool active;
@@ -16,7 +15,6 @@ public class PushBook : PuzzleObject {
     // Use this for initialization
     void Start()
     {
-        player = GameObject.Find("Player");
         initialpos = this.transform.position;
         move = false;
         active = true;
@@ -30,16 +28,11 @@ public class PushBook : PuzzleObject {
         }
         aud = GetComponentInParent<AudioSource>();
     }
+    
 
     // Update is called once per frame
     void Update()
     {
-        if (active && Vector3.Distance(player.transform.position, this.transform.position) < 15 && Input.GetKeyDown("e"))
-        {
-            move = true;
-            aud.Play();
-        }
-
         if (move && Vector3.Distance(initialpos, this.transform.position) < 1)
         {
 
@@ -54,6 +47,8 @@ public class PushBook : PuzzleObject {
 
     public override void activate()
     {
+        move = true;
+        aud.Play();
         if (active)
         {
             act.activate();
