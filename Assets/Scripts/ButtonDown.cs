@@ -43,25 +43,13 @@ public class ButtonDown : PuzzleObject {
         {
             popUp();
         }
-<<<<<<< HEAD
-    }
-
-    void popUp()
-=======
-        
     }
 
 
-    public override void activate()
-    {
-        go = true;
-        act.activate();
-        aud.Play();
 
-    }
+
 
         void popUp()
->>>>>>> origin/master
     {
         go = false;
     }

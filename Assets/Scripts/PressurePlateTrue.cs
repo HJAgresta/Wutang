@@ -13,10 +13,10 @@ public class PressurePlateTrue : PuzzleObject {
     // Use this for initialization
     void Start()
     {
-        player = GameObject.Find("Player");
         initialpos = this.transform.position;
         move = false;
         active = true;
+        player = GameObject.Find("Player");
     }
 
     // Update is called once per frame
