@@ -48,13 +48,9 @@ public class Inventory : MonoBehaviour {
 
 	void Update()
 	{
-        if (triggerClicked)
-        {
-            Debug.Log("clicked");
-        }
 
-
-        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0 || triggerClicked)
+        //desktop inventory
+        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0)
         {
             if(!carry)
             {

@@ -13,13 +13,11 @@ public class Door : PuzzleObject
 
     public override void activate()
     {
-        if(playerpub.GetComponentInChildren<Key>()!=null)
-        {
+
             unlocked = true;
-            GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
+            //GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
             playerpub.GetComponentInChildren<Inventory>().emptyInventory();
-            Destroy(key);
-        }
+            //Destroy(key);
     }
     void Start ()
     {
@@ -97,6 +95,15 @@ public class Door : PuzzleObject
                     }
                 }
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Key>() != null)
+        {
+            activate();
+            
         }
     }
 }

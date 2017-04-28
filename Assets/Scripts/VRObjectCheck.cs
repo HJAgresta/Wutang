@@ -18,8 +18,12 @@ public class VRObjectCheck : MonoBehaviour {
 	void Update () {
         if (go)
         {
-            //puzz.activate();
-            Debug.Log("Hey");
+            puzz.activate();
+            if(puzz.GetComponent<Key>() != null)
+            {
+                puzz.GetComponent<Rigidbody>().useGravity = false;
+                puzz.transform.parent = null;
+            }
             go = false;
         }
 	}
