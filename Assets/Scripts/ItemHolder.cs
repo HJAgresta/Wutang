@@ -5,7 +5,6 @@ using UnityEngine;
 public class ItemHolder : PuzzleObject {
 
     public GameObject baseObject;
-    private GameObject player;
     private bool giveable = true;
     public PuzzleObject parent;
     public PuzzleObject act;
@@ -18,7 +17,6 @@ public class ItemHolder : PuzzleObject {
 
     private void Start()
     {
-        player = GameObject.Find("Player");
         aud = GetComponentInParent<AudioSource>();
     }
 
@@ -26,16 +24,19 @@ public class ItemHolder : PuzzleObject {
     {
         giveable = true;
         inHand++;
+
+        aud.Play();
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-        if (giveable && Vector3.Distance(player.transform.position, this.transform.position) < 14 && Input.GetKeyDown("e"))
+        if (giveable)
         {
-            int loop = inHand;
-            aud.Play();
 
-            for(int i = 0; i < loop; i++)
+            int loop = inHand;
+
+            for (int i = 0; i < loop; i++)
             {
                 GameObject spawned = GameObject.Instantiate(baseObject, parent.transform, true);
                 if (useX)

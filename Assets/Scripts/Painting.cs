@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Painting : PuzzleObject {
-
-    private GameObject player;
-    private Vector3 playerpos;
+    
     public PuzzleObject act;
     private bool move;
     private AudioSource aud;
@@ -13,23 +11,20 @@ public class Painting : PuzzleObject {
 
     // Use this for initialization
     void Start () {
-        player = GameObject.Find("Player");
         move = false;
         aud = GetComponentInParent<AudioSource>();
     }
 	
+    public override void activate()
+    {
+        if(!active)
+        {
+            move = true;
+        }
+    }
 	// Update is called once per frame
 	void Update () {
-        playerpos = player.transform.position;
-
-        if (Vector3.Distance(playerpos, this.transform.position) < 19)
-        {
-            //push e to move the painting
-            if (!active && Input.GetKeyDown("e"))
-            {
-                move = true;
-            }
-        }
+        
 
         if (move)
         {
@@ -40,15 +35,11 @@ public class Painting : PuzzleObject {
             else
             {
                 //aud.Play();
-                activate();
-                move = false;
-                active = true;
+                act.activate();
+                this.enabled = false;
+                
             }
         }
     }
-
-    public override void activate()
-    {
-        act.activate();
-    }
+    
 }
