@@ -14,9 +14,13 @@ public class Door : PuzzleObject
     public override void activate()
     {
 
-            unlocked = true;
-            //GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
+        unlocked = true;
+        //GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
+
+        if (playerpub.GetComponentInChildren<Inventory>() != null)
+        {
             playerpub.GetComponentInChildren<Inventory>().emptyInventory();
+        }
             //Destroy(key);
     }
     void Start ()

@@ -24,16 +24,16 @@ public class Button : PuzzleObject
     {
         playerpos = player.transform.position;
 
-        if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 19)
-        {
-            go = true;
-            act.activate();
-            aud.Play();
-        }
-
         if (go && 0.5 > Vector3.Distance(oldPos, gameObject.transform.position))
         {
             gameObject.transform.Translate(new Vector3(-Time.deltaTime*2,0,0));
         }
+    }
+
+    public override void activate()
+    {
+        go = true;
+        act.activate();
+        aud.Play();
     }
 }

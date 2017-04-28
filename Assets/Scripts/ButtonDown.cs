@@ -10,6 +10,7 @@ public class ButtonDown : PuzzleObject {
     bool go = false;
     float oldPos;
     public PuzzleObject act;
+    public PuzzleObject act2;
     public float dist;
     private Vector3 playerpos;
     private AudioSource aud;
@@ -46,17 +47,21 @@ public class ButtonDown : PuzzleObject {
         {
             popUp();
         }
-
-        if (Input.GetKeyDown("e") && Vector3.Distance(playerpos, this.transform.position) < 9)
-        {
-            go = true;
-            act.activate();
-            aud.Play();
-        }
     }
 
     void popUp()
     {
         go = false;
+    }
+
+    public override void activate()
+    {
+        go = true;
+        act.activate();
+        if(act2 != null)
+        {
+            act2.activate();
+        }
+        aud.Play();
     }
 }
