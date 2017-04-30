@@ -86,6 +86,7 @@ public class Inventory : MonoBehaviour {
                             carryObject = hit.collider.gameObject;
                             carryObject.transform.parent = this.gameObject.transform;
                             carryObject.transform.localPosition = new Vector3(0.184f,0.677f,0.6f);
+                            carryObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
                             carry = true;
                             carryObject.GetComponent<Rigidbody>().useGravity = false;
 

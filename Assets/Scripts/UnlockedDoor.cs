@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider))]
-public class UnlockedDoor : PuzzleObject {
- 
-    // Update is called once per frame
+public class UnlockedDoor : PuzzleObject
+{
     bool unlocked = false;
     public float openThreshhold;
     private bool lessthan = false;
@@ -15,17 +14,21 @@ public class UnlockedDoor : PuzzleObject {
 
     public override void activate()
     {
-        unlocked = true;
-        aud.clip = door; // Change back to door sound
-        aud.Play();
+            unlocked = true;
+            aud.clip = door; // Change back to door sound
+            aud.Play();
+        
+        
     }
     void Start()
     {
+
+        aud = GetComponentInParent<AudioSource>();
+
         if (gameObject.transform.eulerAngles.y < openThreshhold)
         {
             lessthan = true;
         }
-        aud = GetComponentInParent<AudioSource>();
     }
     void Update()
     {
@@ -95,6 +98,15 @@ public class UnlockedDoor : PuzzleObject {
                     }
                 }
             }
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Key>() != null)
+        {
+            activate();
+
         }
     }
 }

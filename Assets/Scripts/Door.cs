@@ -16,20 +16,21 @@ public class Door : PuzzleObject
     public override void activate()
     {
 
-        unlocked = true;
-        aud.clip = door; // Change back to door sound
-        aud.Play();
-        //GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
-
-        if (playerpub.GetComponentInChildren<Inventory>() != null)
+        playerpub = GameObject.FindGameObjectWithTag("Player");
+        if (playerpub.GetComponentInChildren<Key>() != null)
         {
-            playerpub.GetComponentInChildren<Inventory>().emptyInventory();
+
+            GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
+            unlocked = true;
+            aud.clip = door; // Change back to door sound
+            aud.Play();
+            playerpub.GetComponent<Inventory>().emptyInventory();
+
+            Destroy(key);
         }
-        //Destroy(key);
     }
     void Start ()
     {
-        playerpub = GameObject.FindGameObjectWithTag("Player");
         
         aud = GetComponentInParent<AudioSource>();
 
