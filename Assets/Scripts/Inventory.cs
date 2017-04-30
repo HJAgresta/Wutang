@@ -94,7 +94,10 @@ public class Inventory : MonoBehaviour {
                         else if(hit.collider.gameObject.GetComponent<PuzzleObject>() != null)
                         {
                             PuzzleObject puzzleObject =  hit.collider.gameObject.GetComponent<PuzzleObject>();
-                            puzzleObject.activate();
+                            if (puzzleObject.interactable)
+                            {
+                                puzzleObject.activate();
+                            }
                         }
                     }
                 }
