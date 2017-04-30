@@ -11,7 +11,7 @@ public class Lever : PuzzleObject{
 
     // Use this for initialization
     void Start () {
-        aud = GetComponentInParent<AudioSource>();
+        aud = GetComponent<AudioSource>();
     }
 
     public override void activate()

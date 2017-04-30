@@ -22,7 +22,6 @@ public class Button : PuzzleObject
 
     public override void activate()
     {
-
         go = true;
         act.activate();
         aud.Play();

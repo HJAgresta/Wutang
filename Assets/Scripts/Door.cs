@@ -30,6 +30,7 @@ public class Door : PuzzleObject
     void Start ()
     {
         playerpub = GameObject.FindGameObjectWithTag("Player");
+        
         aud = GetComponentInParent<AudioSource>();
 
         if (gameObject.transform.eulerAngles.y < openThreshhold)

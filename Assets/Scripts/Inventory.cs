@@ -21,8 +21,17 @@ public class Inventory : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        //setCamera();
+
+        camera1 = GameObject.Find("Camera").GetComponent<Camera>();
+    }
+
+    IEnumerable setCamera()
+    {
+        yield return new WaitForSeconds(1f);
+
         
-        camera1 = GameObject.Find("Camera (eye)").GetComponent<Camera>();
     }
 
     void OnGUI()
@@ -45,10 +54,14 @@ public class Inventory : MonoBehaviour {
 
     public void emptyInventory()
     {
-        carry = false;
-        carryObject.transform.parent = null;
-        carryObject.GetComponent<Rigidbody>().useGravity = true;
-        carryObject.GetComponent<Collider>().enabled = true;
+        if(carry)
+        {
+            carry = false;
+            carryObject.transform.parent = null;
+            carryObject.GetComponent<Rigidbody>().useGravity = true;
+            carryObject.GetComponent<Collider>().enabled = true;
+        }
+        
     }
 
 	void Update()
