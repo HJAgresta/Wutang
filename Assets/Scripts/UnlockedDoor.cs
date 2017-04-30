@@ -10,10 +10,14 @@ public class UnlockedDoor : PuzzleObject {
     public float openThreshhold;
     private bool lessthan = false;
     public bool clockwise = true;
+    private AudioSource aud;
+    public AudioClip door;
 
     public override void activate()
     {
         unlocked = true;
+        aud.clip = door; // Change back to door sound
+        aud.Play();
     }
     void Start()
     {
@@ -21,9 +25,11 @@ public class UnlockedDoor : PuzzleObject {
         {
             lessthan = true;
         }
+        aud = GetComponentInParent<AudioSource>();
     }
     void Update()
     {
+        //aud.Play(); // Play the jiggle sound
 
         if (lessthan && unlocked)
         {

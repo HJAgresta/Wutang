@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class Key : followObject
 {
+    private AudioSource aud;
+
+    void Start()
+    {
+        aud = GetComponentInParent<AudioSource>();
+    }
 
     public override void activate()
     {
+        aud.Play();
     }
 
     // Update is called once per frame

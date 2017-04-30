@@ -10,32 +10,38 @@ public class Door : PuzzleObject
     public float openThreshhold;
     private bool lessthan = false;
     public bool clockwise = true;
+    private AudioSource aud;
+    public AudioClip door;
 
     public override void activate()
     {
 
         unlocked = true;
+        aud.clip = door; // Change back to door sound
+        aud.Play();
         //GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
 
         if (playerpub.GetComponentInChildren<Inventory>() != null)
         {
             playerpub.GetComponentInChildren<Inventory>().emptyInventory();
         }
-            //Destroy(key);
+        //Destroy(key);
     }
     void Start ()
     {
         playerpub = GameObject.FindGameObjectWithTag("Player");
+        aud = GetComponentInParent<AudioSource>();
 
-        if(gameObject.transform.eulerAngles.y < openThreshhold)
+        if (gameObject.transform.eulerAngles.y < openThreshhold)
         {
             lessthan = true;
         }
     }
     void Update ()
     {
-        
-        if(lessthan && unlocked)
+        //aud.Play(); // Play the jiggle sound
+
+        if (lessthan && unlocked)
         {
             if (!clockwise)
             {
