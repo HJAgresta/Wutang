@@ -12,8 +12,8 @@ public class Inventory : MonoBehaviour {
     [SerializeField]public GUIStyle otherstyle;
     public SteamVR_Controller left;
     public SteamVR_Controller right;
+    private bool controllerAClicked;
     public bool triggerClicked;
-
     
     void Start()
     {
@@ -22,16 +22,9 @@ public class Inventory : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        //setCamera();
+        controllerAClicked = false;
 
         camera1 = GameObject.Find("Camera").GetComponent<Camera>();
-    }
-
-    IEnumerable setCamera()
-    {
-        yield return new WaitForSeconds(1f);
-
-        
     }
 
     void OnGUI()
@@ -61,15 +54,21 @@ public class Inventory : MonoBehaviour {
             carryObject.GetComponent<Rigidbody>().useGravity = true;
             carryObject.GetComponent<Collider>().enabled = true;
         }
-        
     }
 
 	void Update()
 	{
+        //prevents multiple calls from controller button
+        if (Input.GetAxis("ControllerA") == 0)
+        {
+            controllerAClicked = false;
+        }
 
         //desktop inventory
-        if (Input.GetMouseButtonDown(0) || Input.GetAxis("ControllerA") != 0)
+        if (Input.GetMouseButtonDown(0) || (Input.GetAxis("ControllerA") != 0 && !controllerAClicked))
         {
+            controllerAClicked = true;
+
             if(!carry)
             {
                 Ray ray = camera1.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));

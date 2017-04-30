@@ -19,11 +19,16 @@ public class PushChair : PuzzleObject {
     // Update is called once per frame
     public override void activate()
     {
-
-        active = false;
-        go = true;
-        act.activate();
-        aud.Play();
+        if (active)
+        {
+            active = false;
+            go = true;
+            act.activate();
+            if (aud != null)
+            {
+                aud.Play();
+            }
+        }
     }
 
     void Update()
