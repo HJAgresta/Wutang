@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TablePlatform : PuzzleObject {
-    public PuzzleObject act;
     private bool go = false;
     private Vector3 oldPos;
     private AudioSource aud;
@@ -23,7 +22,6 @@ public class TablePlatform : PuzzleObject {
                 aud.Play();
             }
             gameObject.transform.Translate(new Vector3(0, Time.deltaTime * .1f, 0));
-            act.activate();
         }
 	}
 

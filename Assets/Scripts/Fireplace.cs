@@ -23,7 +23,7 @@ public class Fireplace : PuzzleObject {
     // Update is called once per frame
     void Update()
     {
-        if (active && Input.GetKeyDown("e") && Vector3.Distance(player.transform.position, this.transform.position) < 15)
+        if (active)
         {
             act.activate();
         }

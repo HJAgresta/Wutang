@@ -26,7 +26,6 @@ public class ItemHolder : PuzzleObject {
         inHand++;
 
         aud.Play();
-
     }
 	
 	// Update is called once per frame
@@ -55,6 +54,8 @@ public class ItemHolder : PuzzleObject {
 
                 act.activate();
             }
+
+            giveable = false;
         }
 	}
 }
