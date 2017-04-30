@@ -28,6 +28,8 @@ public class Keypad : PuzzleObject {
         {
             entered += s;
         }
+
+        Debug.Log(entered);
     }
 
     //check combo
@@ -36,6 +38,7 @@ public class Keypad : PuzzleObject {
         if(combo == entered)
         {
             act.activate();
+            clear();
         }
         else
         {
