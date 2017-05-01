@@ -11,7 +11,6 @@ public class NumUnlock : PuzzleObject {
 
     public override void activate()
     {
-        Debug.Log("num");
         counter++;
 
         if (counter == steps)

@@ -70,4 +70,38 @@ public class movingBookshelf : PuzzleObject {
             gameObject.transform.Translate(new Vector3(0, 0, Time.deltaTime * 10));
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<TakeItem>() != null)
+        {
+            if (aud != null)
+            {
+                aud.Play();
+            }
+
+            GameObject spawned = GameObject.Instantiate(baseObject, parent.transform, true);
+            if (useX)
+            {
+                spawned.transform.Translate(new Vector3(move, 0f, 0f));
+            }
+            else
+            {
+                spawned.transform.Translate(new Vector3(0f, 0f, move));
+            }
+
+            spawned.transform.parent = parent.transform;
+            move = move - 0.8f;
+
+            other.GetComponent<MeshRenderer>().enabled = false;
+            Destroy(other.gameObject);
+
+            counter++;
+
+            if (counter == steps)
+            {
+                go = true;
+            }
+        }
+    }
 }

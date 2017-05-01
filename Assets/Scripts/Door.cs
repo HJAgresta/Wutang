@@ -12,15 +12,13 @@ public class Door : PuzzleObject
     public bool clockwise = true;
     private AudioSource aud;
     public AudioClip door;
+    [System.NonSerialized]public bool unlock;
 
     public override void activate()
     {
-
-        Debug.Log("door");
         playerpub = GameObject.FindGameObjectWithTag("Player");
         if (playerpub.GetComponentInChildren<Key>() != null)
         {
-
             GameObject key = playerpub.GetComponentInChildren<Key>().gameObject;
             unlocked = true;
             aud.clip = door; // Change back to door sound
@@ -29,7 +27,8 @@ public class Door : PuzzleObject
 
             Destroy(key);
         }
-        if(gameObject.GetComponentInParent<NumUnlock>()!=null)
+
+        if(gameObject.GetComponentInParent<NumUnlock>() != null)
         {
             if(gameObject.GetComponentInParent<NumUnlock>().ready)
             {
@@ -48,6 +47,8 @@ public class Door : PuzzleObject
         {
             lessthan = true;
         }
+
+        unlock = false;
     }
     void Update ()
     {
@@ -124,8 +125,13 @@ public class Door : PuzzleObject
     {
         if (other.GetComponent<Key>() != null)
         {
-            activate();
-            
+            unlocked = true;
+            aud.clip = door; // Change back to door sound
+            aud.Play();
+
+            other.enabled = false;
+            other.GetComponent<MeshRenderer>().enabled = false;
+            Destroy(other);
         }
     }
 }

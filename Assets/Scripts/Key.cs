@@ -16,7 +16,6 @@ public class Key : followObject
         aud.Play();
     }
 
-    // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.GetComponent<Door>()!= null)

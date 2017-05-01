@@ -49,4 +49,20 @@ public class Fireplace : PuzzleObject
             Destroy(takeItem);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<TakeItem>() != null)
+        {
+            if (aud != null)
+            {
+                aud.Play();
+            }
+
+            act.activate();
+
+            other.GetComponent<MeshRenderer>().enabled = false;
+            Destroy(other.gameObject);
+        }
+    }
 }

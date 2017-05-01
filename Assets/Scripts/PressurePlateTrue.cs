@@ -42,9 +42,8 @@ public class PressurePlateTrue : PuzzleObject {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other == player.GetComponent<CapsuleCollider>())
+        if (other == player.GetComponentInChildren<CapsuleCollider>())
         {
-            Debug.Log("Yo");
             activate();
         }
     }

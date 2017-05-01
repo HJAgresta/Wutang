@@ -16,7 +16,6 @@ public class Rotate : PuzzleObject {
 	void Update () {
         if (go && this.transform.eulerAngles.x < 89)
         {
-            Debug.Log(this.transform.eulerAngles.x);
             this.transform.Rotate(Time.deltaTime * 30, 0f, 0f);
         }
         else if(go && this.transform.eulerAngles.x >= 89)

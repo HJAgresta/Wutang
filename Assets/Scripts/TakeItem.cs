@@ -14,7 +14,9 @@ public class TakeItem : followObject
 
     public override void activate()
     {
-        aud.Play();
+        if(aud != null)
+        {
+            aud.Play();
+        }
     }
-    
 }

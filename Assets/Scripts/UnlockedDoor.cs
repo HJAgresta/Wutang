@@ -17,8 +17,6 @@ public class UnlockedDoor : PuzzleObject
             unlocked = true;
             aud.clip = door; // Change back to door sound
             aud.Play();
-        
-        
     }
     void Start()
     {

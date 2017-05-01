@@ -475,7 +475,7 @@ namespace VRTK
                 TriggerPressed(this, e);
             }
 
-            GameObject.Find("[CameraRig]").GetComponent<Inventory>().triggerClicked = true;
+            this.GetComponent<VRObjectCheck>().triggerClicked = true;
         }
 
         public virtual void OnTriggerReleased(ControllerInteractionEventArgs e)
@@ -485,7 +485,7 @@ namespace VRTK
                 TriggerReleased(this, e);
             }
 
-            GameObject.Find("[CameraRig]").GetComponent<Inventory>().triggerClicked = false;
+            this.GetComponent<VRObjectCheck>().triggerClicked = false;
         }
 
         public virtual void OnTriggerTouchStart(ControllerInteractionEventArgs e)

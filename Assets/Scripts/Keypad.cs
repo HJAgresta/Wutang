@@ -5,7 +5,7 @@ using UnityEngine;
 public class Keypad : PuzzleObject {
 
     public string combo;
-    private string entered;
+    private string entered = "";
     public PuzzleObject act;
 
     public string Entered
@@ -26,10 +26,11 @@ public class Keypad : PuzzleObject {
         }
         else
         {
-            entered += s;
+            if(entered.Length < 4)
+            {
+                entered += s;
+            }
         }
-
-        Debug.Log(entered);
     }
 
     //check combo
