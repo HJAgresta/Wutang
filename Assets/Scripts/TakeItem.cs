@@ -2,23 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TakeItem : PuzzleObject {
-    
-    public PuzzleObject act;
+public class TakeItem : followObject
+{
+
     private AudioSource aud;
 
-    private void Start()
+    void Start()
     {
         aud = GetComponentInParent<AudioSource>();
     }
 
     public override void activate()
     {
-        act.activate();
-        Destroy(gameObject, .2f);
-        if (aud != null)
-        {
-            aud.Play();
-        }
+        aud.Play();
     }
+    
 }

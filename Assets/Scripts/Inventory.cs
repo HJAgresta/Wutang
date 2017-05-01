@@ -51,8 +51,8 @@ public class Inventory : MonoBehaviour {
         {
             carry = false;
             carryObject.transform.parent = null;
-            carryObject.GetComponent<Rigidbody>().useGravity = true;
             carryObject.GetComponent<Collider>().enabled = true;
+            carryObject.GetComponent<Rigidbody>().useGravity = true;
         }
     }
 
@@ -88,8 +88,8 @@ public class Inventory : MonoBehaviour {
                             carryObject.GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
                             carry = true;
                             carryObject.GetComponent<Rigidbody>().useGravity = false;
-
                             carryObject.GetComponent<Collider>().enabled = false;
+                            carryObject.GetComponent<Collider>().isTrigger = false;
                         }
                         else if(hit.collider.gameObject.GetComponent<PuzzleObject>() != null)
                         {

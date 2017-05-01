@@ -5,23 +5,19 @@ using UnityEngine;
 public class NumUnlock : PuzzleObject {
     public int steps;
     public PuzzleObject act;
-    private int counter;
-
-    // Use this for initialization
-    void Start () {
-        counter = 0;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(counter == steps)
-        {
-            act.activate();
-        }
-	}
+    private int counter = 0;
+    [System.NonSerialized]
+    public bool ready = false;
 
     public override void activate()
     {
+        Debug.Log("num");
         counter++;
+
+        if (counter == steps)
+        {
+            ready = true;
+            act.activate();
+        }
     }
 }

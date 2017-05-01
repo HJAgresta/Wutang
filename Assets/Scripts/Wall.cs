@@ -13,7 +13,10 @@ public class Wall : PuzzleObject {
     void Start () {
         up = false;
         initialPos = this.gameObject.transform.position;
-        lt = lt.GetComponent<Light>();
+        if(lt != null)
+        {
+            lt = lt.GetComponent<Light>();
+        }
         aud = GetComponentInParent<AudioSource>();
     }
 	
@@ -26,7 +29,11 @@ public class Wall : PuzzleObject {
                 gameObject.transform.Translate(new Vector3(0f, 9.75f * Time.deltaTime, 0f));
             }
 
-            lt.color = Color.green;
+            if (lt != null)
+            {
+                lt.color = Color.green;
+            }
+
         }
         else if (!up)
         {
@@ -39,7 +46,11 @@ public class Wall : PuzzleObject {
                 gameObject.transform.Translate(new Vector3(0f, -9.75f * Time.deltaTime, 0f));
             }
 
-            lt.color = Color.red;
+            if(lt != null)
+            {
+                lt.color = Color.red;
+            }
+            
         }
 	}
 

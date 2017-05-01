@@ -6,7 +6,7 @@ using UnityEngine;
 public class Door : PuzzleObject
 {
     private GameObject playerpub;
-    bool unlocked = false;
+    [System.NonSerialized]public bool unlocked = false;
     public float openThreshhold;
     private bool lessthan = false;
     public bool clockwise = true;
@@ -16,6 +16,7 @@ public class Door : PuzzleObject
     public override void activate()
     {
 
+        Debug.Log("door");
         playerpub = GameObject.FindGameObjectWithTag("Player");
         if (playerpub.GetComponentInChildren<Key>() != null)
         {
@@ -27,6 +28,15 @@ public class Door : PuzzleObject
             playerpub.GetComponent<Inventory>().emptyInventory();
 
             Destroy(key);
+        }
+        if(gameObject.GetComponentInParent<NumUnlock>()!=null)
+        {
+            if(gameObject.GetComponentInParent<NumUnlock>().ready)
+            {
+                unlocked = true;
+                aud.clip = door; // Change back to door sound
+                aud.Play();
+            }
         }
     }
     void Start ()

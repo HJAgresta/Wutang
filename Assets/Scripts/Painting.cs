@@ -35,7 +35,6 @@ public class Painting : PuzzleObject {
             else
             {
                 //aud.Play();
-                act.activate();
                 this.enabled = false;
                 
             }

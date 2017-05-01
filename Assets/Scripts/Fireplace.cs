@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fireplace : PuzzleObject {
+public class Fireplace : PuzzleObject
+{
+    
+    public AudioClip fire;
 
-    private bool active;
-    public PuzzleObject act;
+    public NumUnlock act;
+    private GameObject playerpub;
     private GameObject player;
     private AudioSource aud;
     private bool lit;
-    public AudioClip fire;
+    private bool active;
 
     // Use this for initialization
     void Start()
@@ -23,10 +26,6 @@ public class Fireplace : PuzzleObject {
     // Update is called once per frame
     void Update()
     {
-        if (active)
-        {
-            act.activate();
-        }
         if (active && lit && !aud.isPlaying && aud != null)
         {
             aud.Play();
@@ -39,6 +38,15 @@ public class Fireplace : PuzzleObject {
 
     public override void activate()
     {
-        active = true;
+        playerpub = GameObject.FindGameObjectWithTag("Player");
+        if (playerpub.GetComponentInChildren<TakeItem>() != null)
+        {
+            
+            GameObject takeItem = playerpub.GetComponentInChildren<TakeItem>().gameObject;
+            aud.Play();
+            playerpub.GetComponent<Inventory>().emptyInventory();
+            act.activate();
+            Destroy(takeItem);
+        }
     }
 }
