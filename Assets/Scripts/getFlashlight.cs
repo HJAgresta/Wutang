@@ -25,7 +25,7 @@ public class getFlashlight : PuzzleObject {
                 this.transform.rotation = player.transform.rotation;
                 this.transform.SetParent(GameObject.Find("Camera").transform);
                 this.transform.Rotate(0, 180, 0);
-                this.transform.Translate(-2, -2.5f, 0);
+                this.transform.Translate(-2f, -2f, 0);
             }
             aud.Play();
             poss = false;
