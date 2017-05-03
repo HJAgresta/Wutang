@@ -131,7 +131,7 @@ public class Door : PuzzleObject
 
             other.enabled = false;
             other.GetComponent<MeshRenderer>().enabled = false;
-            Destroy(other);
+            //Destroy(other);
         }
     }
 }

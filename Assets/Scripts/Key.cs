@@ -21,8 +21,11 @@ public class Key : followObject
         if(other.gameObject.GetComponent<Door>()!= null)
         {
             other.gameObject.GetComponent<Door>().activate();
-            GameObject.Find("Player").GetComponent<Inventory>().emptyInventory();
-            Destroy(gameObject);
+            if(GameObject.Find("Player").GetComponent<Inventory>() != null)
+            {
+                GameObject.Find("Player").GetComponent<Inventory>().emptyInventory();
+            }
+            //Destroy(gameObject);
         }
     }
 }

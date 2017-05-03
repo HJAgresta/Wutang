@@ -14,9 +14,9 @@ public class UnlockedDoor : PuzzleObject
 
     public override void activate()
     {
-            unlocked = true;
-            aud.clip = door; // Change back to door sound
-            aud.Play();
+        unlocked = true;
+        aud.clip = door; // Change back to door sound
+        aud.Play();
     }
     void Start()
     {
@@ -99,12 +99,11 @@ public class UnlockedDoor : PuzzleObject
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    /*void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Key>() != null)
         {
             activate();
-
         }
-    }
+    }*/
 }
