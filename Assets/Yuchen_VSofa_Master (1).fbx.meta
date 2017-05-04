@@ -1,62 +1,46 @@
 fileFormatVersion: 2
-guid: 3837fa44fffd44641b7fda0f4f348433
-timeCreated: 1493604918
+guid: 6fbf3e65e859c954c8f8693042f73ead
+timeCreated: 1493911318
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: extrudedSurface1
-    100002: extrudedSurface2
-    100004: extrudedSurface3
-    100006: left
-    100008: pCube1
-    100010: pCube10
-    100012: pCube11
-    100014: pCube4
-    100016: pCube7
-    100018: pCube8
-    100020: pCube9
-    100022: transform1
-    100024: transform2
-    100026: //RootNode
-    400000: extrudedSurface1
-    400002: extrudedSurface2
-    400004: extrudedSurface3
-    400006: left
-    400008: pCube1
-    400010: pCube10
-    400012: pCube11
-    400014: pCube4
-    400016: pCube7
-    400018: pCube8
-    400020: pCube9
-    400022: transform1
-    400024: transform2
-    400026: //RootNode
-    2300000: extrudedSurface3
-    2300002: pCube1
-    2300004: pCube10
-    2300006: pCube11
-    2300008: pCube4
-    2300010: pCube7
-    2300012: pCube8
-    2300014: pCube9
-    3300000: extrudedSurface3
-    3300002: pCube1
-    3300004: pCube10
-    3300006: pCube11
-    3300008: pCube4
-    3300010: pCube7
-    3300012: pCube8
-    3300014: pCube9
-    4300000: pCube1
-    4300002: pCube4
-    4300004: pCube7
-    4300006: pCube8
-    4300008: pCube9
-    4300010: extrudedSurface3
-    4300012: pCube10
-    4300014: pCube11
+    100000: group
+    100002: pCube10
+    100004: pCube11
+    100006: pCube4
+    100008: pPlane4
+    100010: pPlane5
+    100012: pPlane6
+    100014: pPlane7
+    100016: transform3
+    100018: transform4
+    100020: transform5
+    100022: //RootNode
+    400000: group
+    400002: pCube10
+    400004: pCube11
+    400006: pCube4
+    400008: pPlane4
+    400010: pPlane5
+    400012: pPlane6
+    400014: pPlane7
+    400016: transform3
+    400018: transform4
+    400020: transform5
+    400022: //RootNode
+    2300000: pCube10
+    2300002: pCube11
+    2300004: pCube4
+    2300006: pPlane7
+    3300000: pCube10
+    3300002: pCube11
+    3300004: pCube4
+    3300006: pPlane7
+    4300000: pCube4
+    4300002: pCube10
+    4300004: pCube11
+    4300006: pPlane7
     7400000: Take 001
     9500000: //RootNode
   materials:
