@@ -26,7 +26,7 @@ public class Keypad : PuzzleObject {
         }
         else
         {
-            if(entered.Length < 4)
+            if(entered.Length < combo.Length)
             {
                 entered += s;
             }
