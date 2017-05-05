@@ -14,7 +14,10 @@ public class OpenDesk : PuzzleObject
 
     public override void activate()
     {
-        if (!go) aud.Play();
+        if (!go)
+        {
+            aud.Play();
+        }
         go = true;
     }
 
