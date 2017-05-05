@@ -53,12 +53,15 @@ public class VRObjectCheck : MonoBehaviour {
 
         if(holdingItem && !triggerClicked)
         {
-            if (puzz.GetComponent<Key>() != null || puzz.GetComponent<TakeItem>() != null)
+            if (puzz != null)
             {
-                puzz.GetComponent<Rigidbody>().useGravity = true;
-                if (puzz.GetComponent<Collider>() != null)
+                if (puzz.GetComponent<Key>() != null || puzz.GetComponent<TakeItem>() != null)
                 {
-                    puzz.GetComponent<Collider>().isTrigger = false;
+                    puzz.GetComponent<Rigidbody>().useGravity = true;
+                    if (puzz.GetComponent<Collider>() != null)
+                    {
+                        puzz.GetComponent<Collider>().isTrigger = false;
+                    }
                 }
             }
 

@@ -24,7 +24,7 @@ public class ItemHolder : PuzzleObject {
     {
         //desktop
         playerpub = GameObject.FindGameObjectWithTag("Player");
-        if (playerpub.GetComponentsInChildren<TakeItem>() != null)
+        if (playerpub.GetComponentInChildren<TakeItem>() != null)
         {
             takeItem = playerpub.GetComponentInChildren<TakeItem>().gameObject;
             if(aud !=null)
