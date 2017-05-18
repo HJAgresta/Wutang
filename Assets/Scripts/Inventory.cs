@@ -37,7 +37,7 @@ public class Inventory : MonoBehaviour {
 
             GUI.Box(new Rect((Screen.width / 2)-5, (Screen.height / 2)-5, 10, 10), "", style);
 
-            if (hit.collider.gameObject.GetComponent<PuzzleObject>() != null && hit.collider.gameObject.GetComponent<PuzzleObject>().interactable == true)
+            if (hit.collider.gameObject.GetComponent<PuzzleObject>() != null && hit.collider.gameObject.GetComponent<PuzzleObject>().interactable == true && Vector3.Distance(hit.collider.gameObject.transform.position,this.transform.position)<20)
             {
                 GUI.Box(new Rect((Screen.width / 2)-5, (Screen.height / 2)-5, 10, 10), "", otherstyle);
             }
@@ -80,7 +80,7 @@ public class Inventory : MonoBehaviour {
                     Debug.Log(hit.collider.gameObject.name);
                     if (hit.collider != null)
                     {
-                        if (hit.collider.gameObject.GetComponent<followObject>() != null)
+                        if (hit.collider.gameObject.GetComponent<followObject>() != null && Vector3.Distance(hit.collider.gameObject.transform.position, this.transform.position) < 20)
                         {
                             carryObject = hit.collider.gameObject;
                             carryObject.transform.parent = this.gameObject.transform;
@@ -91,7 +91,7 @@ public class Inventory : MonoBehaviour {
                             carryObject.GetComponent<Collider>().enabled = false;
                             carryObject.GetComponent<Collider>().isTrigger = false;
                         }
-                        else if(hit.collider.gameObject.GetComponent<PuzzleObject>() != null)
+                        else if(hit.collider.gameObject.GetComponent<PuzzleObject>() != null && Vector3.Distance(hit.collider.gameObject.transform.position, this.transform.position) < 20)
                         {
                             PuzzleObject puzzleObject =  hit.collider.gameObject.GetComponent<PuzzleObject>();
                             if (puzzleObject.interactable)
